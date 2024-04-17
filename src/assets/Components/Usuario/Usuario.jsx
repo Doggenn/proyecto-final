@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
-export default function Perfil() {
+export default function Usuario() {
     return (
         <div>
             <div>
@@ -17,7 +18,8 @@ export default function Perfil() {
                         <img src="public/images/Icons/icons-pink/arrow@3x.png" alt="" />
                     </div>
                 </div>
-                <div>
+                <Link to="/usuario"></Link>
+                <div >
                     <div>
                         <img src="public/images/Icons/icons-blue/localization@3x.png" alt="" />
                         <h4>Direcciones</h4>
