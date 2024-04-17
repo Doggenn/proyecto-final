@@ -2,6 +2,15 @@ import React from 'react'
 
 export default function Home() {
     return (
-        <div>Bienvenidos a la HOME =) del proyecto de mascotas..</div>
+        <div>
+
+
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+
+
+
+
+
+        </div>
     )
 }
