@@ -5,6 +5,7 @@ import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import './App.css'
 import Home from './assets/Pages/Home/Home'
 import Menu from './assets/Pages/Menu/Menu'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 

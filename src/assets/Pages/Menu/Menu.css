@@ -1,6 +1,11 @@
 .MenuStilo {
-
+    display: flex;
     background-color: red;
     color: red;
-
+    height: 10vh;
+    width: 0 auto;
+}
+.menuImagen{
+    height: 20px;
+    width: 20px;
 }
