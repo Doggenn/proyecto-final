@@ -6,16 +6,14 @@ import { Link } from 'react-router-dom'
 export default function Menu() {
     return (
         <div>
-            <div className='MenuStilo'>
-                <header>
-                    <nav>
-                        <Link className='estiloNav' to="/Home"><img src="./images/Icons/icons-blue/home@3x.png" alt="" /></Link>
-                        <Link className='estiloNav' to="/Home"><img src="./images/Icons/icons-blue/mapa@3x.png" alt="" /></Link>
-                        <Link className='estiloNav' to="/Home"><img src="./images/Icons/icons-blue/mascota@3x.png" alt="" /></Link>
-                        <Link className='estiloNav' to="/Home"><div ><img className='menuImagen' src="./images/foto-perfil/fotodeperfil@3x.png" alt="" /></div></Link>
-                        <Link className='estiloNav' to="/Home"><img src="./images/Icons/icons-blue/mS@3x.png" alt="" /></Link>
-                    </nav>
-                </header>
+            <div >
+                <nav className='menuEstilo'>
+                    <Link className='estiloNav' to="/Home"><img className='menuImg' src="./images/Icons/icons-blue/home@3x.png" alt="home" /></Link>
+                    <Link className='estiloNav' to="/Home"><img className='menuImg' src="./images/Icons/icons-blue/mapa@3x.png" alt="mapa" /></Link>
+                    <Link className='estiloNav' to="/Home"><img className='menuImg' src="./images/Icons/icons-blue/mascota@3x.png" alt="mascotas" /></Link>
+                    <Link className='estiloNav' to="/usuario"><img className='menuImg' src="./images/foto-perfil/fotodeperfil@3x.png" alt="perfil" /></Link>
+                    <Link className='estiloNav' to="/boarding"><img className='menuImg' src="./images/Icons/icons-blue/mS@3x.png" alt="mas" /></Link>
+                </nav>
             </div>
         </div>
     )
