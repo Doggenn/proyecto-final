@@ -6,20 +6,44 @@ import './App.css'
 import Home from './assets/Pages/Home/Home'
 import Menu from './assets/Pages/Menu/Menu'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Usuario from './assets/Components/Usuario/Usuario';
+import Mascotas from './assets/Components/Mascotas/Mascotas';
+import Registro from './assets/Components/Registro/Registro';
+import Login from './assets/Components/Login/Login';
+import Mas from './assets/Components/Mas/Mas';
+import PerfilMascotas from './assets/Components/PerfilMascotas/PerfilMascotas';
+import FormularioAdopcion from './assets/Components/Formulario/FormularioAdopcion';
+import Mapa from './assets/Components/Mapa/Mapa';
+import EstadoAdopcion from './assets/Components/Estado/EstadoAdopcion';
+import OnBoardingOne from './assets/Components/OnBoarding/OnBoardingOne';
+import OnBoardingFour from './assets/Components/OnBoarding/OnBoardingFour';
+import OnBoardingTwo from './assets/Components/OnBoarding/OnBoardingTwo';
+import OnBoardingThree from './assets/Components/OnBoarding/OnBoardingThree';
+import LoginAsociacion from './assets/Components/LoginAsociacion/LoginAsociacion';
 
 function App() {
 
   return (
     <>
-
-      <h1>holaaa =))</h1>
       <Router>
-        {/* ESTO ES UN MENU */}
-        <Menu></Menu>
-        {/* ESTO ES LA DECLARACIÓN DE RUTAS */}
         <Routes>
-          <Route path="/Home" element={<Home />} />
+          <Route path="" element={<Home />} />
+          <Route path="/usuario" element={<Usuario />} />
+          <Route path="/mascotas" element={<Mascotas />} />
+          <Route path="/registro" element={<Registro />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/mas" element={< Mas />} />
+          <Route path="/perfilmascotas" element={<PerfilMascotas />} />
+          <Route path="/formulario" element={<FormularioAdopcion />} />
+          <Route path="/estados" element={<EstadoAdopcion />} />
+          <Route path="/mapa" element={<Mapa />} />
+          <Route path="/boardingone" element={<OnBoardingOne />} />
+          <Route path="/boardingtwo" element={<OnBoardingTwo />} />
+          <Route path="/boardingthree" element={<OnBoardingThree />} />
+          <Route path="/boardingfour" element={<OnBoardingFour />} />
+          <Route path="/asociacion" element={<LoginAsociacion />} />
         </Routes>
+        <Menu></Menu>
       </Router>
     </>
   )
