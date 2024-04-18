@@ -1,6 +1,9 @@
 .perfil{
     width: 100vw;
 }
+.usuario-p{
+    align-content: center;
+}
 .contenedor {
     border: 1px solid #00748E;
     margin: 10px 0px;
