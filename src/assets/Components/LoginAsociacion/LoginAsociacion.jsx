@@ -17,8 +17,8 @@ export default function LoginAsociacion() {
     console.log(asociaciones);
 
     return (
-        <div class="container">
-            <div class="row">
+        <div className="container">
+            <div className="row">
                 <div>
                     {asociaciones.map((aso, index) => (
                         <tr key={index}>
@@ -29,6 +29,6 @@ export default function LoginAsociacion() {
                     ))}
                 </div>
             </div>
-        </div >
+        </div>
     )
 }

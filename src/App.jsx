@@ -20,6 +20,7 @@ import OnBoardingFour from './assets/Components/OnBoarding/OnBoardingFour';
 import OnBoardingTwo from './assets/Components/OnBoarding/OnBoardingTwo';
 import OnBoardingThree from './assets/Components/OnBoarding/OnBoardingThree';
 import LoginAsociacion from './assets/Components/LoginAsociacion/LoginAsociacion';
+import Carrusel from './assets/Components/OnBoarding/Carrusel';
 
 function App() {
 
@@ -42,6 +43,7 @@ function App() {
           <Route path="/boardingthree" element={<OnBoardingThree />} />
           <Route path="/boardingfour" element={<OnBoardingFour />} />
           <Route path="/asociacion" element={<LoginAsociacion />} />
+          <Route path="/carrusel" element={<Carrusel />} />
         </Routes>
         <Menu></Menu>
       </Router>
