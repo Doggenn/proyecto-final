@@ -43,7 +43,7 @@ function App() {
           <Route path="/boardingfour" element={<OnBoardingFour />} />
           <Route path="/asociacion" element={<LoginAsociacion />} />
         </Routes>
-        {/* <Menu></Menu> */}
+        <Menu></Menu>
       </Router>
     </>
   )
