@@ -5,7 +5,7 @@ import './Usuario.css'
 export default function Usuario() {
     return (
         <div className='container pt-3'>
-            <div className='row'>
+            <div className='r-u row'>
                 <div className='a-img col-12 d-flex align-items-center justify-content-center'>
                     <img src="public/images/foto-perfil/fotodeperfil@3x.png" alt="" />
                 </div>
@@ -38,7 +38,7 @@ export default function Usuario() {
                             <img src="public/images/Icons/icons-pink/arrow@3x.png" alt="" />
                         </div>
                     </div>
-                    <div className='contenedor col-12 d-flex justify-content-between'>
+                    <div className='contenedor contenedor-ul col-12 d-flex justify-content-between'>
                         <div className='c-h d-flex align-items-center'>
                             <img src="public/images/Icons/icons-blue/notificacionesblue@3x.png" alt="" />
                             <h4>Notificaciones</h4>
