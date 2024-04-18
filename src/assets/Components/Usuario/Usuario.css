@@ -9,10 +9,19 @@
 
 .c-h h4 {
     padding: 10px;
-    font-size: 30px;
+    font-size: 15px;
     margin: 10px;
 }
 
 .c-h img {
-    width: 40px;
+    width: 30px;
+}
+
+
+.a-img img {
+    width: 23%;
+}
+
+.i-arrow img {
+    width: 10px;
 }

@@ -15,15 +15,17 @@ import PerfilMascotas from './assets/Components/PerfilMascotas/PerfilMascotas';
 import FormularioAdopcion from './assets/Components/Formulario/FormularioAdopcion';
 import Mapa from './assets/Components/Mapa/Mapa';
 import EstadoAdopcion from './assets/Components/Estado/EstadoAdopcion';
+import OnBoardingOne from './assets/Components/OnBoarding/OnBoardingOne';
+import OnBoardingFour from './assets/Components/OnBoarding/OnBoardingFour';
+import OnBoardingTwo from './assets/Components/OnBoarding/OnBoardingTwo';
+import OnBoardingThree from './assets/Components/OnBoarding/OnBoardingThree';
+import LoginAsociacion from './assets/Components/LoginAsociacion/LoginAsociacion';
 
 function App() {
 
   return (
     <>
-
-      <h1>holaaa =))</h1>
       <Router>
-        <Menu></Menu>
         <Routes>
           <Route path="" element={<Home />} />
           <Route path="/usuario" element={<Usuario />} />
@@ -35,7 +37,13 @@ function App() {
           <Route path="/formulario" element={<FormularioAdopcion />} />
           <Route path="/estados" element={<EstadoAdopcion />} />
           <Route path="/mapa" element={<Mapa />} />
+          <Route path="/boardingone" element={<OnBoardingOne />} />
+          <Route path="/boardingtwo" element={<OnBoardingTwo />} />
+          <Route path="/boardingthree" element={<OnBoardingThree />} />
+          <Route path="/boardingfour" element={<OnBoardingFour />} />
+          <Route path="/asociacion" element={<LoginAsociacion />} />
         </Routes>
+        {/* <Menu></Menu> */}
       </Router>
     </>
   )
