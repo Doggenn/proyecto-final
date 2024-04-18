@@ -4,75 +4,73 @@ import './Usuario.css'
 
 export default function Usuario() {
     return (
-        <div className='container pt-3'>
-            <div className='r-u row'>
-                <div className='a-img col-12 d-flex align-items-center justify-content-center'>
-                    <img src="public/images/foto-perfil/fotodeperfil@3x.png" alt="" />
+        <div className='container pt-3 '>
+            <div className='perfil-img a-img col-12 d-flex align-items-center justify-content-center'>
+                <img src="public/images/foto-perfil/fotodeperfil@3x.png" alt="" />
+            </div>
+            <div className='contenedor-p col-12 d-flex flex-column '>
+                <div className='contenedor col-12 d-flex justify-content-between'>
+                    <div className='c-h d-flex align-items-center'>
+                        <img src="public/images/foto-perfil/chica@3x.png" alt="" />
+                        <h4>Mi Perfil</h4>
+                    </div>
+                    <div className=' i-arrow d-flex align-items-center'>
+                        <img src="public/images/Icons/icons-pink/arrow@3x.png" alt="" />
+                    </div>
                 </div>
-                <div className='col-12 d-flex flex-column '>
-                    <div className='contenedor col-12 d-flex justify-content-between'>
-                        <div className='c-h d-flex align-items-center'>
-                            <img src="public/images/foto-perfil/chica@3x.png" alt="" />
-                            <h4>Mi Perfil</h4>
-                        </div>
-                        <div className=' i-arrow d-flex align-items-center'>
-                            <img src="public/images/Icons/icons-pink/arrow@3x.png" alt="" />
-                        </div>
+                <Link to="/usuario"></Link>
+                <div className=' contenedor col-12 d-flex justify-content-between'>
+                    <div className='c-h d-flex align-items-center'>
+                        <img src="public/images/Icons/icons-blue/localization@3x.png" alt="" />
+                        <h4>Direcciones</h4>
                     </div>
-                    <Link to="/usuario"></Link>
-                    <div className=' contenedor col-12 d-flex justify-content-between'>
-                        <div className='c-h d-flex align-items-center'>
-                            <img src="public/images/Icons/icons-blue/localization@3x.png" alt="" />
-                            <h4>Direcciones</h4>
-                        </div>
-                        <div className='i-arrow d-flex align-items-center'>
-                            <img src="public/images/Icons/icons-pink/arrow@3x.png" alt="" />
-                        </div>
+                    <div className='i-arrow d-flex align-items-center'>
+                        <img src="public/images/Icons/icons-pink/arrow@3x.png" alt="" />
                     </div>
-                    <div className='contenedor col-12 d-flex justify-content-between'>
-                        <div className='c-h d-flex align-items-center'>
-                            <img src="public/images/Icons/icons-blue/favoritosCopyblue@3x.png" alt="" />
-                            <h4>Favoritos</h4>
-                        </div>
-                        <div className='i-arrow d-flex align-items-center'>
-                            <img src="public/images/Icons/icons-pink/arrow@3x.png" alt="" />
-                        </div>
+                </div>
+                <div className='contenedor col-12 d-flex justify-content-between'>
+                    <div className='c-h d-flex align-items-center'>
+                        <img src="public/images/Icons/icons-blue/favoritosCopyblue@3x.png" alt="" />
+                        <h4>Favoritos</h4>
                     </div>
-                    <div className='contenedor contenedor-ul col-12 d-flex justify-content-between'>
-                        <div className='c-h d-flex align-items-center'>
-                            <img src="public/images/Icons/icons-blue/notificacionesblue@3x.png" alt="" />
-                            <h4>Notificaciones</h4>
-                        </div>
-                        <div className='i-arrow d-flex align-items-center'>
-                            <img src="public/images/Icons/icons-pink/arrow@3x.png" alt="" />
-                        </div>
+                    <div className='i-arrow d-flex align-items-center'>
+                        <img src="public/images/Icons/icons-pink/arrow@3x.png" alt="" />
                     </div>
-                    <div className='contenedor col-12 d-flex justify-content-between'>
-                        <div className='c-h d-flex align-items-center'>
-                            <img src="public/images/Icons/icons-blue/mascota@3x.png" alt="" />
-                            <h4>Estado de la adopción</h4>
-                        </div>
-                        <div className='i-arrow d-flex align-items-center'>
-                            <img src="public/images/Icons/icons-pink/arrow@3x.png" alt="" />
-                        </div>
+                </div>
+                <div className='contenedor col-12 d-flex justify-content-between'>
+                    <div className='c-h d-flex align-items-center'>
+                        <img src="public/images/Icons/icons-blue/notificacionesblue@3x.png" alt="" />
+                        <h4>Notificaciones</h4>
                     </div>
-                    <div className=' contenedor col-12 d-flex justify-content-between'>
-                        <div className='c-h d-flex align-items-center'>
-                            <img src="public/images/Icons/icons-blue/apadrina@3x.png" alt="" />
-                            <h4>Apadrinar</h4>
-                        </div>
-                        <div className='i-arrow d-flex align-items-center'>
-                            <img src="public/images/Icons/icons-pink/arrow@3x.png" alt="" />
-                        </div>
+                    <div className='i-arrow d-flex align-items-center'>
+                        <img src="public/images/Icons/icons-pink/arrow@3x.png" alt="" />
                     </div>
-                    <div className='contenedor col-12 d-flex justify-content-between'>
-                        <div className='c-h d-flex align-items-center'>
-                            <img src="public/images/Icons/icons-blue/donar@3x.png" alt="" />
-                            <h4>Donar</h4>
-                        </div>
-                        <div className='i-arrow d-flex align-items-center'>
-                            <img src="public/images/Icons/icons-pink/arrow@3x.png" alt="" />
-                        </div>
+                </div>
+                <div className='contenedor col-12 d-flex justify-content-between'>
+                    <div className='c-h d-flex align-items-center'>
+                        <img src="public/images/Icons/icons-blue/mascota@3x.png" alt="" />
+                        <h4>Estado de la adopción</h4>
+                    </div>
+                    <div className='i-arrow d-flex align-items-center'>
+                        <img src="public/images/Icons/icons-pink/arrow@3x.png" alt="" />
+                    </div>
+                </div>
+                <div className=' contenedor col-12 d-flex justify-content-between'>
+                    <div className='c-h d-flex align-items-center'>
+                        <img src="public/images/Icons/icons-blue/apadrina@3x.png" alt="" />
+                        <h4>Apadrinar</h4>
+                    </div>
+                    <div className='i-arrow d-flex align-items-center'>
+                        <img src="public/images/Icons/icons-pink/arrow@3x.png" alt="" />
+                    </div>
+                </div>
+                <div className='contenedor col-12 d-flex justify-content-between'>
+                    <div className='c-h d-flex align-items-center'>
+                        <img src="public/images/Icons/icons-blue/donar@3x.png" alt="" />
+                        <h4>Donar</h4>
+                    </div>
+                    <div className='i-arrow d-flex align-items-center'>
+                        <img src="public/images/Icons/icons-pink/arrow@3x.png" alt="" />
                     </div>
                 </div>
             </div>
