@@ -1,12 +1,17 @@
+.perfil{
+    width: 100vw;
+}
 .contenedor {
     border: 1px solid #00748E;
-    margin: 10px;
+    margin: 10px 0px;
     padding: 0 30px;
-
     border-radius: 10px;
     color: #00748E;
 }
-
+.contenedor-p{
+    width: 100%;
+    min-height: 100vh;
+}
 .c-h h4 {
     padding: 10px;
     font-size: 15px;
@@ -18,10 +23,14 @@
 }
 
 
-.a-img img {
-    width: 23%;
+.perfil-img {
+    width: 100%;
+    height: 100% ;
+    padding: 7%;
 }
-
+.a-img img {
+    max-width: 35%;
+}
 .i-arrow img {
     width: 10px;
 }

@@ -4,12 +4,11 @@ import './Usuario.css'
 
 export default function Usuario() {
     return (
-        <div className='container pt-3'>
-            <div className='row'>
-                <div className='a-img col-12 d-flex align-items-center justify-content-center'>
+        <div className='container pt-3 '>
+                <div className='perfil-img a-img col-12 d-flex align-items-center justify-content-center'>
                     <img src="public/images/foto-perfil/fotodeperfil@3x.png" alt="" />
                 </div>
-                <div className='col-12 d-flex flex-column '>
+                <div className='contenedor-p col-12 d-flex flex-column '>
                     <div className='contenedor col-12 d-flex justify-content-between'>
                         <div className='c-h d-flex align-items-center'>
                             <img src="public/images/foto-perfil/chica@3x.png" alt="" />
@@ -75,7 +74,6 @@ export default function Usuario() {
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     )
 }
