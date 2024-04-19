@@ -1,6 +1,6 @@
 .menuEstilo {
     height: 10vh;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     bottom: 0;
     background-color: rgb(255, 255, 255);
@@ -16,6 +16,6 @@
     margin: 2%;
 }
 .menuImg{
-    max-height: 60%;
+    max-height: 70%;
     max-width: 100%;
 }
