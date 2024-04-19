@@ -2,6 +2,10 @@
     width: 100vw;
 }
 
+.usuario-p {
+    align-content: center;
+}
+
 .contenedor {
     border: 1px solid #00748E;
     margin: 10px 0px;
@@ -46,8 +50,4 @@
 
 .contenedor-ul {
     margin-bottom: 50px;
-}
-
-.contenedor-ull {
-    margin-bottom: 30px;
 }

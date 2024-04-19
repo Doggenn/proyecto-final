@@ -4,7 +4,7 @@ import './Usuario.css'
 
 export default function Usuario() {
     return (
-        <div className='container pt-3 '>
+        <div className='usuario-p container'>
             <div className='perfil-img a-img col-12 d-flex align-items-center justify-content-center'>
                 <img src="public/images/foto-perfil/fotodeperfil@3x.png" alt="" />
             </div>
