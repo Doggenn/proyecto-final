@@ -100,7 +100,7 @@ export default function Filtros() {
             </div> */}
             <div className='c-sele col-12'>
                 <h2>Edad</h2>
-                <select >
+                <select className='col-8 d-flex'>
                     <option value="joven">Joven</option>
                     <option value="adulto">Adulto</option>
                     <option value="mayor">Mayor</option>

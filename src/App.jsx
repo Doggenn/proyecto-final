@@ -50,7 +50,7 @@ function App() {
           <Route path="/mascotas/:id" element={<MascotasID />} />
           <Route path="/filtros" element={<Filtros />} />
         </Routes>
-        {/* <Menu></Menu> */}
+        <Menu></Menu>
       </Router>
     </>
   )
