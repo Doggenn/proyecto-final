@@ -1,6 +1,7 @@
-.perfil{
+.perfil {
     width: 100vw;
 }
+
 .contenedor {
     border: 1px solid #00748E;
     margin: 10px 0px;
@@ -8,10 +9,12 @@
     border-radius: 10px;
     color: #00748E;
 }
-.contenedor-p{
+
+.contenedor-p {
     width: 100%;
     min-height: 100vh;
 }
+
 .c-h h4 {
     padding: 10px;
     font-size: 15px;
@@ -25,12 +28,14 @@
 
 .perfil-img {
     width: 100%;
-    height: 100% ;
+    height: 100%;
     padding: 7%;
 }
+
 .a-img img {
     max-width: 35%;
 }
+
 .i-arrow img {
     width: 10px;
 }
@@ -41,4 +46,8 @@
 
 .contenedor-ul {
     margin-bottom: 50px;
+}
+
+.contenedor-ull {
+    margin-bottom: 30px;
 }

@@ -21,6 +21,8 @@ import OnBoardingTwo from './assets/Components/OnBoarding/OnBoardingTwo';
 import OnBoardingThree from './assets/Components/OnBoarding/OnBoardingThree';
 import LoginAsociacion from './assets/Components/LoginAsociacion/LoginAsociacion';
 import Carrusel from './assets/Components/OnBoarding/Carrusel';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import MascotasID from './assets/Components/Mascotas/MascotasID';
 
 function App() {
 
@@ -44,6 +46,7 @@ function App() {
           <Route path="/boardingfour" element={<OnBoardingFour />} />
           <Route path="/asociacion" element={<LoginAsociacion />} />
           <Route path="/carrusel" element={<Carrusel />} />
+          <Route path="/mascotas/:id" element={<MascotasID />} />
         </Routes>
         <Menu></Menu>
       </Router>

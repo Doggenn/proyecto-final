@@ -37,7 +37,7 @@ export default function Usuario() {
                         <img src="public/images/Icons/icons-pink/arrow@3x.png" alt="" />
                     </div>
                 </div>
-                <div className='contenedor col-12 d-flex justify-content-between'>
+                <div className='contenedor contenedor-ull col-12 d-flex justify-content-between'>
                     <div className='c-h d-flex align-items-center'>
                         <img src="public/images/Icons/icons-blue/notificacionesblue@3x.png" alt="" />
                         <h4>Notificaciones</h4>
