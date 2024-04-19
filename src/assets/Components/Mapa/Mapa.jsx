@@ -60,7 +60,7 @@ const MapContainer = () => {
     };
   }, []); // Empty dependency array ensures useEffect only runs once
 
-  return <div id="mi_mapa" style={{ height: "670px", width: "100%" }} />;
+  return <div id="mi_mapa" style={{ height: "90vh", width: "100%" }} />;
 };
 
 export default MapContainer;
