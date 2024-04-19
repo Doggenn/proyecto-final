@@ -6,6 +6,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import img1 from '/public/images/Guide/img1.png'
 import img2 from '/public/images/Guide/img2.png'
 import img3 from '/public/images/Guide/img3.png'
+import Menu from '../../Pages/Menu/Menu';
 
 
 export default function Carrusel() {
@@ -13,16 +14,16 @@ export default function Carrusel() {
         <div>
             <Carousel data-bs-theme="dark">
                 <Carousel.Item>
-                    <img
+                    {/* <img
                         className="d-block w-100"
                         src={img2}
                         alt="First slide"
-                    />
-                    {/* <OnBoardingOne /> */}
-                    <Carousel.Caption>
+                    /> */}
+                    <OnBoardingOne />
+                    {/* <Carousel.Caption>
                         <h5>First slide label</h5>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
+                    </Carousel.Caption> */}
                 </Carousel.Item>
                 <Carousel.Item>
                     {/* <img
