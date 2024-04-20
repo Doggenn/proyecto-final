@@ -1,11 +1,3 @@
-.perfil {
-    width: 100vw;
-}
-
-.usuario-p {
-    align-content: center;
-}
-
 .contenedor {
     border: 1px solid #00748E;
     margin: 10px 0px;
@@ -19,6 +11,10 @@
     min-height: 100vh;
 }
 
+.contenedor-p-ul {
+    margin-top: 55px;
+}
+
 .c-h h4 {
     padding: 10px;
     font-size: 15px;
@@ -29,25 +25,10 @@
     width: 30px;
 }
 
-
-.perfil-img {
-    width: 100%;
-    height: 100%;
-    padding: 7%;
-}
-
-.a-img img {
-    max-width: 35%;
-}
-
 .i-arrow img {
     width: 10px;
 }
 
-.r-w {
-    padding: 0 10px;
-}
-
 .contenedor-ul {
-    margin-bottom: 50px;
+    margin-top: 200px;
 }

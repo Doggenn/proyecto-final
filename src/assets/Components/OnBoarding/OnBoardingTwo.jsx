@@ -11,7 +11,7 @@ export default function OnBoardingTwo() {
             <div className='o-med contenedor-img col-12 d-flex flex-column'>
                 <Link to='/boarding'></Link>
                 <div className='w-med'>
-                    <img src="public/images/Guide/imagen2@3x.png" alt="" />
+                    <img src="public/images/Guide/img1.png" alt="" />
                 </div>
                 <div className='b-text'>
                     <h2>

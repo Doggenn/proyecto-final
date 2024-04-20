@@ -11,7 +11,7 @@ export default function OnBoardingOne() {
             <div className='o-med contenedor-img col-12 d-flex flex-column'>
                 <Link to='/boarding'></Link>
                 <div className='w-med'>
-                    <img src="public/images/Guide/undrawGoodDoggy4Wfq.png" alt="" />
+                    <img src="public/images/Guide/img2.png" alt="" />
                 </div>
                 <div className='b-text'>
                     <h2>Encuentra todo tipo
