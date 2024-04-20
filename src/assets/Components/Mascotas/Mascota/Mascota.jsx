@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios';
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import './Mascota.css'
 
 
@@ -253,6 +253,8 @@ export default function MascotasID() {
                         </div>
                     </>
                 )}
+                <Link to={`/formulario`} className='btn btn-outline-danger'>Apadrinar</Link>
+                <Link to={"/formulario"} className='btn btn-danger'>Adoptar</Link>
             </div>
         </>
     )
