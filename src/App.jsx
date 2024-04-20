@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import './App.css'
 import Home from './assets/Pages/Home/Home'
@@ -20,6 +17,10 @@ import OnBoardingFour from './assets/Components/OnBoarding/OnBoardingFour';
 import OnBoardingTwo from './assets/Components/OnBoarding/OnBoardingTwo';
 import OnBoardingThree from './assets/Components/OnBoarding/OnBoardingThree';
 import LoginAsociacion from './assets/Components/LoginAsociacion/LoginAsociacion';
+import Carrusel from './assets/Components/OnBoarding/Carrusel';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import MascotasID from './assets/Components/Mascotas/Mascota/Mascota';
+import Filtros from './assets/Components/Filtros/Filtros';
 
 function App() {
 
@@ -42,6 +43,9 @@ function App() {
           <Route path="/boardingthree" element={<OnBoardingThree />} />
           <Route path="/boardingfour" element={<OnBoardingFour />} />
           <Route path="/asociacion" element={<LoginAsociacion />} />
+          <Route path="/carrusel" element={<Carrusel />} />
+          <Route path="/mascotas/:id" element={<MascotasID />} />
+          <Route path="/filtros" element={<Filtros />} />
         </Routes>
         <Menu></Menu>
       </Router>

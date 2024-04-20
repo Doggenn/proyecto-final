@@ -11,7 +11,7 @@ export default function OnBoardingThree() {
             <div className='o-med contenedor-img col-12 d-flex flex-column'>
                 <Link to='/boarding'></Link>
                 <div className='w-med'>
-                    <img src="public/images/Guide/undrawPetAdoption2Qkw@2x.png" alt="" />
+                    <img src="public/images/Guide/img3.png" alt="" />
                 </div>
                 <div className='b-text b-text-ul'>
                     <h2>Si eres una asociación

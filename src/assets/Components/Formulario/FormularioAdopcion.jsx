@@ -1,11 +1,17 @@
-import React from 'react'
+// eslint-disable-next-line no-unused-vars
+import React, { useState } from 'react'
 import './FormularioAdopcion.css'
+
 export default function FormularioAdopcion() {
+
+    const [page, setPage] = useState(1);
+
     return (
         <div className='formulario'>
             <div className="">
-                    <form className='formularioForm' action="" method="post">
-                        <fieldset>
+                <form className='form' action="" method="post">
+                    {page === 1 && (
+                        <fieldset className='form__group'>
                             <h2>Tus datos</h2>
                             <div className="">
                                 <p><input type="text" placeholder='Nombre y apellidos' /></p>
@@ -25,6 +31,8 @@ export default function FormularioAdopcion() {
 
                             </div>
                         </fieldset>
+                    )}
+                    {page === 2 && (
                         <fieldset>
                             <h2>Sobre las mascotas</h2>
                             <div className='formAnimales'>
@@ -55,6 +63,8 @@ export default function FormularioAdopcion() {
                             <p className='formPregunta'>¿Conoces su alimentación?</p>
                             <input id="eleccion" type="text" />
                         </fieldset>
+                    )}
+                    {page === 3 && (
                         <fieldset>
                             <p className='formPregunta'>¿Dónde vives?</p>
                             <input id="eleccion" type="text" placeholder='Piso, casa, chalet...' />
@@ -77,11 +87,11 @@ export default function FormularioAdopcion() {
                                 <div className='formAnimales_int'>
                                     <p className='formPregunta'>¿Tu casero permite animales?</p>
                                 </div>
-                                    <div className='formAnimales_int'>
-                                        <div className="formAnimales_int_b">
-                                            <input type="radio" name="casero" id="siCasero" />
-                                            <label htmlFor="siCasero">Sí</label>
-                                        </div>
+                                <div className='formAnimales_int'>
+                                    <div className="formAnimales_int_b">
+                                        <input type="radio" name="casero" id="siCasero" />
+                                        <label htmlFor="siCasero">Sí</label>
+                                    </div>
                                     <div className="formAnimales_int_b">
                                         <input type="radio" name="casero" id="noCasero" />
                                         <label htmlFor="noCasero">No</label>
@@ -92,80 +102,86 @@ export default function FormularioAdopcion() {
                                 <div className='formAnimales_int'>
                                     <p className='formPregunta'>¿Crees que podrías mudarte pronto?</p>
                                 </div>
-                                    <div className='formAnimales_int'>
-                                        <div className="formAnimales_int_b">
-                                            <input type="radio" name="mudanza" id="siMudanza" />
-                                            <label htmlFor="siMudanza">Sí</label>
-                                        </div>
-                                        <div className="formAnimales_int_b">
-                                            <input type="radio" name="mudanza" id="noMudanza" />
-                                            <label htmlFor="noMudanza">No</label>
-                                        </div>
+                                <div className='formAnimales_int'>
+                                    <div className="formAnimales_int_b">
+                                        <input type="radio" name="mudanza" id="siMudanza" />
+                                        <label htmlFor="siMudanza">Sí</label>
+                                    </div>
+                                    <div className="formAnimales_int_b">
+                                        <input type="radio" name="mudanza" id="noMudanza" />
+                                        <label htmlFor="noMudanza">No</label>
+                                    </div>
                                 </div>
                             </div>
                             <div className='formAnimales'>
                                 <div className='formAnimales_int'>
-                                        <p className='formPregunta'>¿Tiene jardín?</p>
+                                    <p className='formPregunta'>¿Tiene jardín?</p>
+                                </div>
+                                <div className='formAnimales_int'>
+                                    <div className="formAnimales_int_b">
+                                        <input type="radio" name="casero" id="siJardin" />
+                                        <label htmlFor="siJardin">Sí</label>
                                     </div>
-                                    <div className='formAnimales_int'>
-                                        <div className="formAnimales_int_b">
-                                            <input type="radio" name="casero" id="siJardin" />
-                                            <label htmlFor="siJardin">Sí</label>
-                                        </div>
                                     <div className="formAnimales_int_b">
                                         <input type="radio" name="casero" id="noCasero" />
                                         <label htmlFor="noCasero">No</label>
                                     </div>
                                 </div>
-                        </div>
-                        <div className='formAnimales'>
+                            </div>
+                            <div className='formAnimales'>
                                 <div className='formAnimales_int'>
-                                        <p className='formPregunta'>¿Vives con otras personas?</p>
+                                    <p className='formPregunta'>¿Vives con otras personas?</p>
+                                </div>
+                                <div className='formAnimales_int'>
+                                    <div className="formAnimales_int_b">
+                                        <input type="radio" name="personas" id="siPersonas" />
+                                        <label htmlFor="siPersonas">Sí</label>
                                     </div>
-                                    <div className='formAnimales_int'>
-                                        <div className="formAnimales_int_b">
-                                            <input type="radio" name="personas" id="siPersonas" />
-                                            <label htmlFor="siPersonas">Sí</label>
-                                        </div>
                                     <div className="formAnimales_int_b">
                                         <input type="radio" name="personas" id="noPersonas" />
                                         <label htmlFor="noPersonas">No</label>
                                     </div>
                                 </div>
-                        </div>
-                        <div className='formAnimales'>
+                            </div>
+                            <div className='formAnimales'>
                                 <div className='formAnimales_int'>
-                                        <p className='formPregunta'>¿Están todos de acuerdo con la adopción?</p>
+                                    <p className='formPregunta'>¿Están todos de acuerdo con la adopción?</p>
+                                </div>
+                                <div className='formAnimales_int'>
+                                    <div className="formAnimales_int_b">
+                                        <input type="radio" name="adopcion" id="siAdopcion" />
+                                        <label htmlFor="siAdopcion">Sí</label>
                                     </div>
-                                    <div className='formAnimales_int'>
-                                        <div className="formAnimales_int_b">
-                                            <input type="radio" name="adopcion" id="siAdopcion" />
-                                            <label htmlFor="siAdopcion">Sí</label>
-                                        </div>
                                     <div className="formAnimales_int_b">
                                         <input type="radio" name="adopcion" id="noAdopcion" />
                                         <label htmlFor="noAdopcion">No</label>
                                     </div>
                                 </div>
-                        </div>
-                        <div className='formAnimales'>
+                            </div>
+                            <div className='formAnimales'>
                                 <div className='formAnimales_int'>
-                                        <p className='formPregunta'>¿Estás de acuerdo que visitemos tu casa?</p>
+                                    <p className='formPregunta'>¿Estás de acuerdo que visitemos tu casa?</p>
+                                </div>
+                                <div className='formAnimales_int'>
+                                    <div className="formAnimales_int_b">
+                                        <input type="radio" name="visita" id="siVisita" />
+                                        <label htmlFor="siVisita">Sí</label>
                                     </div>
-                                    <div className='formAnimales_int'>
-                                        <div className="formAnimales_int_b">
-                                            <input type="radio" name="visita" id="siVisita" />
-                                            <label htmlFor="siVisita">Sí</label>
-                                        </div>
                                     <div className="formAnimales_int_b">
                                         <input type="radio" name="visita" id="noVisita" />
                                         <label htmlFor="noVisita">No</label>
                                     </div>
                                 </div>
-                        </div>
-                        <input type="submit" value="" />
-                        </fieldset>                
-                    </form>
+                            </div>
+                           
+                        </fieldset>)} 
+                    {page > 1 && (
+                        <button className="button" type="button" onClick={()=>setPage(page -1)}>Retroceder</button>
+                    )}
+                    {page < 3 && <button className="button" type="button" onClick={() => setPage(page + 1)}>Siguiente</button>}
+                    {page === 3 &&  <button className="button" type="submit">Enviar</button>}
+                    
+                </form>
             </div>
         </div>
     )
