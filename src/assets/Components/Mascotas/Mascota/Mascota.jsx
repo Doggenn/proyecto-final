@@ -109,8 +109,8 @@ export default function MascotasID() {
                                         {mascota.peso}Kg
                                     </p>
                                 </div>
-                                <div className="mascotaPersonalidad">
-                                    {mascota.personalidad}
+                                <div className="mascotaPersonalidad" dangerouslySetInnerHTML={{ __html: mascota.personalidad }}>
+                                    {/* {mascota.personalidad} */}
                                 </div>
                             </div>
                         </div>
