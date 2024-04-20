@@ -1,12 +1,10 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 import OnBoardingOne from './OnBoardingOne'
 import OnBoardingTwo from './OnBoardingTwo'
 import OnBoardingThree from './OnBoardingThree'
 import Carousel from 'react-bootstrap/Carousel';
-import img1 from '/public/images/Guide/img1.png'
-import img2 from '/public/images/Guide/img2.png'
-import img3 from '/public/images/Guide/img3.png'
-import Menu from '../../Pages/Menu/Menu';
+
 
 
 export default function Carrusel() {

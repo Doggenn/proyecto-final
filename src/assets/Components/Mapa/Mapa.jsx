@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import BuscarFiltro from '../BuscarFiltro/BuscarFiltro';
 
 const MapContainer = () => {
   useEffect(() => {
@@ -89,8 +90,12 @@ const MapContainer = () => {
       map.remove();
     };
   }, []); // Empty dependency array ensures useEffect only runs once
-
-  return <div id="mi_mapa" style={{ height: "90vh", width: "100%" }} />;
+  
+    return (
+        <>
+            <BuscarFiltro/> 
+     <div id="mi_mapa" style={{ height: "90vh", width: "100%" }} />   
+    </>);
 };
 
 export default MapContainer;

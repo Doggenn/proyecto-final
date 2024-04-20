@@ -2,10 +2,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Mas.css'
+import Buscar from '../Buscar/Buscar'
 
 export default function Mas() {
     return (
         <div className='container contenedor-p contenedor-p-ul col-12 d-flex flex-column'>
+            <Buscar className="buscador_mapa"></Buscar>
             <Link to='/mas'></Link>
             <div className='contenedor col-12 d-flex justify-content-between'>
                 <div className='c-h d-flex align-items-center'>
