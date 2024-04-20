@@ -9,13 +9,18 @@
     justify-content: center;
     align-items: center
 }
+.mascotaIco{
+    height: 20px;
+}
+.mascotaIcoShare {
+    height: 30px;
+}
 .mascotaOpciones{
     display: flex;
     justify-content: center;
 }
 .mascotaOpciones h4{
     padding: 0 25px;
-    
 }
 .mascotaOpcionesDatos {
     color: rgb(1, 116, 142);
@@ -29,9 +34,13 @@
     color:rgb(1, 116, 142);
     border-bottom: 3px solid rgb(250 156 147);
 }
+.mascotaHuella{
+    height: 20px;
+}
 .mascotaLinea{
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-between;
+    font-size: 20px;
 }
 .mascotaLinea2 {
     display: flex;

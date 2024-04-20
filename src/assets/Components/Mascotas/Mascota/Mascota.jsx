@@ -29,17 +29,17 @@ export default function MascotasID() {
                 </div>
                 <div className='mascotaNombre'>
                     <div>
-                        <img src="" alt={mascota.sexo} />
+                        <img className='mascotaIcoShare' src={mascota.sexo_img} alt={mascota.sexo} />
                     </div>
                     <div>
                         <p>{mascota.nombre}</p>
                         <p>{mascota.ubicacion}</p>
                     </div>
                     <div>
-                        <img src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/0315D523-89DF-4A64-8286-0AD97D153FD7.png" alt="Añadira favorito" />
+                        <img className='mascotaIco' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/0315D523-89DF-4A64-8286-0AD97D153FD7.png" alt="Añadira favorito" />
                     </div>
                     <div>
-                        <img src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/05D83C1A-F50E-4428-8C5F-B2966C3A9B14.png" alt="Compartir" />
+                        <img className='mascotaIcoShare' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/05D83C1A-F50E-4428-8C5F-B2966C3A9B14.png" alt="Compartir" />
                     </div>
                 </div>
             </div>
@@ -52,12 +52,11 @@ export default function MascotasID() {
                             <h4 onClick={()=>setPage(3)}>Adopción</h4>
                         </div>
                         <div className='mascotaDatos'>
-                            <p>Datos</p>
                             <div>
                                 <div className='mascotaLinea'>
                                     <div className='mascotaLinea2'>
                                         <div>
-                                            <img src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
+                                            <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
                                         </div>
                                         <p>Especie</p>
                                     </div>
@@ -68,7 +67,7 @@ export default function MascotasID() {
                                 <div className='mascotaLinea'>
                                     <div className='mascotaLinea2'>
                                         <div>
-                                            <img src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
+                                            <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
                                         </div>
                                         <p>Fecha de nacimiento</p>
                                     </div>
@@ -79,7 +78,7 @@ export default function MascotasID() {
                                 <div className='mascotaLinea'>
                                     <div className='mascotaLinea2'>
                                         <div>
-                                            <img src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
+                                            <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
                                         </div>
                                         <p>Sexo</p>
                                     </div>
@@ -90,7 +89,7 @@ export default function MascotasID() {
                                 <div className='mascotaLinea'>
                                     <div className='mascotaLinea2'>
                                         <div>
-                                            <img src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
+                                            <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
                                         </div>
                                         <p>Tamaño</p>
                                     </div>
@@ -101,7 +100,7 @@ export default function MascotasID() {
                                 <div className='mascotaLinea'>
                                     <div className='mascotaLinea2'>
                                         <div>
-                                            <img src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
+                                            <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
                                         </div>
                                         <p>Peso</p>
                                     </div>
