@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import './App.css'
 import Home from './assets/Pages/Home/Home'
@@ -22,8 +19,10 @@ import OnBoardingThree from './assets/Components/OnBoarding/OnBoardingThree';
 import LoginAsociacion from './assets/Components/LoginAsociacion/LoginAsociacion';
 import Carrusel from './assets/Components/OnBoarding/Carrusel';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import MascotasID from './assets/Components/Mascota/Mascota';
+import MascotasID from './assets/Components/Mascotas/Mascota/Mascota';
 import Filtros from './assets/Components/Filtros/Filtros';
+import Novedades from "./assets/Components/Novedades/Novedades";
+import CarouselNovedades from "./assets/Components/Novedades/CarouselNovedades";
 
 function App() {
 
@@ -49,6 +48,9 @@ function App() {
           <Route path="/carrusel" element={<Carrusel />} />
           <Route path="/mascotas/:id" element={<MascotasID />} />
           <Route path="/filtros" element={<Filtros />} />
+          <Route path="/novedades" element={<Novedades />} />
+          <Route path="/carousel" element={<CarouselNovedades />} />
+
         </Routes>
         <Menu></Menu>
       </Router>

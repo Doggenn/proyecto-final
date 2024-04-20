@@ -1,4 +1,4 @@
-/*.totalBorder {
+.totalBorder {
     border: 3px solid rgb(154, 193, 215) !important;
     padding: auto;
     margin: auto;
@@ -6,14 +6,17 @@
 
 .titulo-im {
     padding: 50px;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
 }
 
 .lasP {
     color: #3a7f9b;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     margin-top: 20px;
 }
@@ -26,6 +29,7 @@
 .password {
     margin-top: -20px;
     margin-bottom: 15px;
+    margin-left: 25px;
 }
 
 .formulario {
@@ -41,6 +45,7 @@
     padding: 8px 20px;
     margin-top: 20px;
     cursor: pointer;
+    position: relative
 }
 
 .botones button {
@@ -63,4 +68,12 @@
     margin: -18px;
     font-size: inherit;
     line-height: inherit;
+    border: none;
+    border-bottom: 1px solid rgb(1 116 142);
+}
+.icon-container {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%) 
 }

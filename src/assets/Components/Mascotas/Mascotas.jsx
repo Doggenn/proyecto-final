@@ -45,8 +45,9 @@ export default function Mascotas() {
                 <div className='carta'>
 
                     {mascotas.map((mascota, index) =>
-                        <Link to={`/mascotas/${mascota.id}`}>
-                            < div className='card-animal' key={index}>
+
+                        <Link key={index} to={`/mascotas/${mascota.id}`}>
+                            <div className='card-animal' >
                                 <div className='tamano-img'>
                                     <img className='t-max' src={mascota.imagen} alt={mascota.nombre} />
                                 </div>
@@ -62,38 +63,6 @@ export default function Mascotas() {
         </div >
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // <div className='container row'>
-        //     <div className='card col-12' >
-        //         {mascotas.map((item, index) => (
-        //         <figure className='fig' key={index}>
-        //             <img className='fig-img' src={item.imagen} alt="" />
-        //         </figure>
-        //         <div>
-        //             <div>
-        //                 <h2>{item.nombre}</h2>
-        //             </div>
-        //             <div>
-        //                 <span>{item.ubicacion}</span>
-        //             </div>
-        //         </div>
-        //         ))}
-        //     </div>
-        // </div>
 
     )
 }
