@@ -4,6 +4,7 @@
 .mascotaImagen img{
     height: 100%;
 }
+
 .mascotaNombre{
     display: flex;
     justify-content: center;
