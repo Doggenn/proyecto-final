@@ -52,64 +52,82 @@ export default function MascotasID() {
                             <h4 onClick={()=>setPage(3)}>Adopción</h4>
                         </div>
                         <div className='mascotaDatos'>
-                            <div>
-                                <div className='mascotaLinea'>
-                                    <div className='mascotaLinea2'>
-                                        <div>
-                                            <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
-                                        </div>
-                                        <p>Especie</p>
+                            <div className='container'>
+                                <div className='col-12'>
+                                    <div className="">
+
                                     </div>
-                                    <p>
-                                        {mascota.especie}
-                                    </p>
-                                </div>
-                                <div className='mascotaLinea'>
-                                    <div className='mascotaLinea2'>
-                                        <div>
-                                            <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
+                                    <div className="col-md-4 offset-md-4">
+                                        <div className='mascotaLinea'>
+                                            <div className='mascotaLinea2'>
+                                                <div>
+                                                    <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
+                                                </div>
+                                                <p>Especie</p>
+                                            </div>
+                                            <p>
+                                                {mascota.especie}
+                                            </p>
                                         </div>
-                                        <p>Fecha de nacimiento</p>
-                                    </div>
-                                    <p>
-                                        {mascota.fecha_nacimiento}
-                                    </p>
-                                </div>
-                                <div className='mascotaLinea'>
-                                    <div className='mascotaLinea2'>
-                                        <div>
-                                            <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
+                                        <div className='mascotaLinea'>
+                                            <div className='mascotaLinea2'>
+                                                <div>
+                                                    <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
+                                                </div>
+                                                <p>Fecha de nacimiento</p>
+                                            </div>
+                                            <p>
+                                                {mascota.fecha_nacimiento}
+                                            </p>
                                         </div>
-                                        <p>Sexo</p>
-                                    </div>
-                                    <p>
-                                        {mascota.sexo}
-                                    </p>
-                                </div>
-                                <div className='mascotaLinea'>
-                                    <div className='mascotaLinea2'>
-                                        <div>
-                                            <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
+                                        <div className='mascotaLinea'>
+                                            <div className='mascotaLinea2'>
+                                                <div>
+                                                    <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
+                                                </div>
+                                                <p>Sexo</p>
+                                            </div>
+                                            <p>
+                                                {mascota.sexo}
+                                            </p>
                                         </div>
-                                        <p>Tamaño</p>
-                                    </div>
-                                    <p>
-                                        {mascota.tamaño}
-                                    </p>
-                                </div>
-                                <div className='mascotaLinea'>
-                                    <div className='mascotaLinea2'>
-                                        <div>
-                                            <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
+                                        <div className='mascotaLinea'>
+                                            <div className='mascotaLinea2'>
+                                                <div>
+                                                    <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
+                                                </div>
+                                                <p>Tamaño</p>
+                                            </div>
+                                            <p>
+                                                {mascota.tamaño}
+                                            </p>
                                         </div>
-                                        <p>Peso</p>
+                                        <div className='mascotaLinea'>
+                                            <div className='mascotaLinea2'>
+                                                <div>
+                                                    <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
+                                                </div>
+                                                <p>Peso</p>
+                                            </div>
+                                            <p>
+                                                {mascota.peso}Kg
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <div className='mascotaPersonalidadH'>
+                                                <h3>Personanidad</h3>
+                                            </div>
+                                            <div className="mascotaPersonalidad" dangerouslySetInnerHTML={{ __html: mascota.personalidad }}>
+                                                {/* {mascota.personalidad} */}
+                                            </div>
+                                        </div>
+                                        <div className="mascotasDescripcion">
+                                            <div>
+                                                <h3>Historia</h3>
+                                                <p>{mascota.descripcion}</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <p>
-                                        {mascota.peso}Kg
-                                    </p>
-                                </div>
-                                <div className="mascotaPersonalidad" dangerouslySetInnerHTML={{ __html: mascota.personalidad }}>
-                                    {/* {mascota.personalidad} */}
                                 </div>
                             </div>
                         </div>
@@ -123,7 +141,73 @@ export default function MascotasID() {
                             <h4 onClick={()=>setPage(3)}>Adopción</h4>
                         </div>
                         <div className='mascotaSalud'>
-                            <p>Salud</p>
+                            <div className='mascotaDatos'>
+                                <div className='container'>
+                                    <div className='col-12'>
+                                        <div className="col-md-4 offset-md-4">
+                                            <div className='mascotaLinea'>
+                                                <div className='mascotaLinea2'>
+                                                    <div>
+                                                        <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
+                                                    </div>
+                                                    <p>Vacunado</p>
+                                                </div>
+                                                <p>
+                                                    {mascota.vacunado}
+                                                </p>
+                                            </div>
+                                            <div className='mascotaLinea'>
+                                                <div className='mascotaLinea2'>
+                                                    <div>
+                                                        <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
+                                                    </div>
+                                                    <p>Desparasitado</p>
+                                                </div>
+                                                <p>
+                                                    {mascota.desparasitado}
+                                                </p>
+                                            </div>
+                                            <div className='mascotaLinea'>
+                                                <div className='mascotaLinea2'>
+                                                    <div>
+                                                        <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
+                                                    </div>
+                                                    <p>Sano</p>
+                                                </div>
+                                                <p>
+                                                    {mascota.sano}
+                                                </p>
+                                            </div>
+                                            <div className='mascotaLinea'>
+                                                <div className='mascotaLinea2'>
+                                                    <p>Identificado</p>
+                                                </div>
+                                                <p>
+                                                    {mascota.identificado}
+                                                </p>
+                                            </div>
+                                            <div className='mascotaLinea'>
+                                                <div className='mascotaLinea2'>
+                                                    <div>
+                                                        <img className='mascotaHuella' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/3FB22543-120C-4B6A-AA64-D7FA7570C3F5.png" alt="inf" />
+                                                    </div>
+                                                    <p>Microchip</p>
+                                                </div>
+                                                <p>
+                                                    {mascota.microchip}
+                                                </p>
+                                            </div>
+                                            <div className="mascotasDescripcion">
+                                                <div>
+                                                    <h3>Tienes que saber que</h3>
+                                                    <p>{mascota.saber}</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </>
                 )}
@@ -135,7 +219,37 @@ export default function MascotasID() {
                             <h4 className='mascotaOpcionesAdopcion' onClick={()=>setPage(3)}>Adopción</h4>
                         </div>
                         <div className='mascotaAdopcion'>
-                            <p>Adopcion</p>
+                            <div className='container'>
+                                <div className='col-12'>
+                                    <div className="">
+
+                                    </div>
+                                    <div className="col-md-4 offset-md-4">
+                                        <div className="mascotasDescripcion">
+                                            <div>
+                                                <h3>Requisitos adopción</h3>
+                                                <p>{mascota.requisitos}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 offset-md-4">
+                                        <div className="mascotasDescripcion">
+                                            <div>
+                                                <h3>Tasa de adopción <img className='mascotaIcoShare' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/84273E13-75D2-4AE8-A280-EAD555388A6D.png" alt="" /></h3>
+                                                <p>{mascota.tasa}€</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 offset-md-4">
+                                        <div className="mascotasDescripcion">
+                                            <div>
+                                                <h3>¿Se envía a otra ciudad?</h3>
+                                                <p>{mascota.envio}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </>
                 )}

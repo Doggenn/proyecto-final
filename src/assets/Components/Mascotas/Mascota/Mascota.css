@@ -48,8 +48,12 @@
 }
 .mascotaPersonalidad{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+}
+.mascotaPersonalidadH{
+    color: rgb(1, 116, 142);
+    text-align: start;
+    padding: 10px;
 }
 .mascotaPersonalidadP{
     background-color: rgb(1, 116, 142);
@@ -57,4 +61,15 @@
     padding: 0 20px;
     margin: 5px 5px;
     border-radius: 100px;
+}
+.mascotasDescripcion{
+    border: 1px solid rgb(1, 116, 142);
+    text-align: start;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.mascotasDescripcion h3{
+    color: rgb(1, 116, 142);
+    text-align: start;
 }
