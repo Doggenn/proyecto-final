@@ -4,6 +4,8 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
 import './Login.css';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from '../Home/Home';
+import Novedades from '../Novedades/Novedades';
 
 export default function Login() {
 
@@ -41,7 +43,10 @@ export default function Login() {
         }).then(response => response.json()).then(result => {
 
 
+
             if (result.token) {
+
+                console.log("hola");
 
                 localStorage.setItem('token', result.token)
                 setLoginSuccessful(true);
@@ -59,6 +64,7 @@ export default function Login() {
             console.log(error);
 
         })
+
 
     }
 

@@ -23,6 +23,8 @@ import MascotasID from './assets/Components/Mascotas/Mascota/Mascota';
 import Filtros from './assets/Components/Filtros/Filtros';
 import Novedades from "./assets/Components/Novedades/Novedades";
 import CarouselNovedades from "./assets/Components/Novedades/CarouselNovedades";
+import Home from "./assets/Components/Home/Home";
+
 
 
 function parseJwt(token) {
@@ -43,7 +45,7 @@ function App() {
 
   return (
 
-    <>{tokenExisteAndStillValid ? <Novedades /> : <Login />}</>
+    <>{tokenExisteAndStillValid ? <Home /> : <Login />}</>
 
   )
 }
