@@ -21,27 +21,27 @@ export default function Registro() {
     return (
         <>
             <div className='background'>
-                <div className='total1'>
+                <div className='total1 col-md-4 offset-md-4'>
                     <div className='titulo-imgOne'>
-                    <p>¿Cómo quieres entrar?</p>
+                    <h4>¿Cómo quieres entrar?</h4>
                     <div className='form-1'>
                         <div>
                             <div className='botonesOne'>
-                                <Link to="/login">
-                                <button onClick={handleUsuarioClick}>Usuario</button>
+                                <Link className='btn btn-info registroBoton' onClick={handleUsuarioClick} to="/login">
+                                Usuario
                                 </Link>
-                                <Link to="/login">
-                                <button onClick={handleProtectoraClick}>Asociación protectora</button>
+                                <Link className='btn btn-info registroBoton' onClick={handleProtectoraClick} to="/login">
+                                    Asociación protectora
                                 </Link>
                             </div>
-                            <Link to="/login">
-                                <p onClick={handleRegistrarseOtroMomentoClick}>Registrarse en otro momento</p>
-                            </Link>
+                                <Link className='registroLink' onClick={handleRegistrarseOtroMomentoClick} to="/">
+                                    Registrarse en otro momento
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
         </>
     )
