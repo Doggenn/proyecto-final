@@ -29,7 +29,7 @@ export default function Novedades() {
 
     return (
         <div className='contenedor-novedades'>
-            <div>
+            <div className='d-flex' style={{ color: '#00748E', marginTop: '20px' }}>
                 <h1>¡Hola Celia!</h1>
             </div>
             <CarouselNovedades />

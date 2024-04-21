@@ -46,10 +46,11 @@
 }
 
 .contnt {
+    height: 100vh;
     width: 100%;
 }
 
 .foto {
     margin: 10px;
-    width: 167px;
+    width: 270px;
 }

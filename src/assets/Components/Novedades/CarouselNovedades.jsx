@@ -6,9 +6,9 @@ export default function CarouselNovedades() {
 
 
     return (
-        <div className=' col-md-4 offset-md-4' >
+        <div className=' col-12 md-4 d-flex flex-column align-items-center' >
             {page === 1 && (
-                <div className="c-content col-md-1 offset-md-1" style={{
+                <div className="c-content " style={{
                     backgroundColor: '#BDD2D6'
                     // backgroundImage: `url('https://previews.123rf.com/images/karenr/karenr1603/karenr160300065/53466268-la-pata-de-perro-azul-la-impresi%C3%B3n-del-modelo-del-azulejo-de-repetici%C3%B3n-de-fondo-que-se-repite-sin.jpg')`,
                     // backgroundSize: 'cover',
@@ -16,7 +16,7 @@ export default function CarouselNovedades() {
                     // width: '100%',
                     // opacity: 0.5
                 }}>
-                    <div className='d-flex'>
+                    <div className=' sombra d-flex'>
                         <div className='imagen'>
                             <img onClick={() => setPage(page + 1)} src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/CC600FC1-2637-4139-9A06-45697A688810.png" alt="" />
                         </div>
@@ -37,7 +37,7 @@ export default function CarouselNovedades() {
                     width: '100%',
                     // opacity: 0.5
                 }}>
-                    <div className='d-flex'>
+                    <div className='sombra d-flex'>
                         <div className='imagen'>
                             <img onClick={() => setPage(page + 1)} src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/F01C2434-2928-4732-824B-3F1A69442BBC.png" alt="" />
                         </div>
@@ -58,9 +58,9 @@ export default function CarouselNovedades() {
                     width: '100%',
                     // opacity: 0.5
                 }}>
-                    <div className='d-flex'>
+                    <div className='sombra d-flex'>
 
-                        <div >
+                        <div className='imagen'>
                             <img onClick={() => setPage(1)} src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/E3B3BC30-6328-4724-8E7A-3B95FDA579C4.png" alt="" />
                         </div>
                         <div className='d-flex flex-column'>
