@@ -30,7 +30,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="" element={<Home />} />
+          <Route path="/sweetHomeAlabama" element={<Home />} />
           <Route path="/usuario" element={<Usuario />} />
           <Route path="/mascotas" element={<Mascotas />} />
           <Route path="/registro" element={<Registro />} />
@@ -48,7 +48,7 @@ function App() {
           <Route path="/carrusel" element={<Carrusel />} />
           <Route path="/mascotas/:id" element={<MascotasID />} />
           <Route path="/filtros" element={<Filtros />} />
-          <Route path="/novedades" element={<Novedades />} />
+          <Route path="/" element={<Novedades />} />
           <Route path="/carousel" element={<CarouselNovedades />} />
 
         </Routes>
