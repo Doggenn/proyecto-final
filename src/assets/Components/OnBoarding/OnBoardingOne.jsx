@@ -7,7 +7,7 @@ export default function OnBoardingOne() {
     return (
         <div className='row'>
             <div className='med col-12 d-flex justify-content-end align-items-start'>
-                <img src="public/images/Icons/cerrar@3x.png" alt="" />
+                {/* <img src="public/images/Icons/cerrar@3x.png" alt="" /> */}
             </div>
             <div className='o-med contenedor-img col-12 d-flex flex-column'>
                 <Link to='/boarding'></Link>

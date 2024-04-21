@@ -46,6 +46,7 @@ export default function Mascotas() {
                 <div className='carta'>
 
                     {mascotas.map((mascota, index) =>
+
                         <Link key={index} to={`/mascotas/${mascota.id}`}>
                             <div className='card-animal' >
                                 <div className='image-container' >
@@ -61,41 +62,9 @@ export default function Mascotas() {
                     )}
                 </div>
             </div>
-        </div>
+        </div >
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // <div className='container row'>
-        //     <div className='card col-12' >
-        //         {mascotas.map((item, index) => (
-        //         <figure className='fig' key={index}>
-        //             <img className='fig-img' src={item.imagen} alt="" />
-        //         </figure>
-        //         <div>
-        //             <div>
-        //                 <h2>{item.nombre}</h2>
-        //             </div>
-        //             <div>
-        //                 <span>{item.ubicacion}</span>
-        //             </div>
-        //         </div>
-        //         ))}
-        //     </div>
-        // </div>
 
     )
 }
