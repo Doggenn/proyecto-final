@@ -46,7 +46,7 @@ export default function Home() {
                     <Route path="/mascotas/:id" element={<MascotasID />} />
                     <Route path="/filtros" element={<Filtros />} />
                     <Route path="/novedades" element={<Novedades />} />
-
+                    <Route path="/login" element={<Login />} />
                     <Route path="/carousel" element={<CarouselNovedades />} />
                 </Routes>
                 <Menu></Menu>

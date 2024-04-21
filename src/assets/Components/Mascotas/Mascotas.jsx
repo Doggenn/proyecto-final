@@ -13,10 +13,29 @@ export default function Mascotas() {
 
 
     const getMascotas = async () => {
+
+
         const res = await axios.get(urlBbdd)
         console.log(res.data);
         setMascotas(res.data)
     }
+
+    const handleFilterMascotas = (event) => {
+
+        const value = event.target.value;
+
+        if (value === "") {
+
+            getMascotas();
+
+        } else {
+
+            const filtered = mascotas.filter(MascotasFiltro => MascotasFiltro.nombre.toLowerCase().includes(value.toLowerCase()));
+            setMascotas(filtered);
+
+        }
+
+    };
 
     useEffect(() => {
         getMascotas()
@@ -26,7 +45,10 @@ export default function Mascotas() {
 
         <div className='container col-md-4 offset-md-4'>
 
-            <Buscar />
+            <div className='conta-buscar d-flex justify-content-between'>
+                <input type='text' onChange={handleFilterMascotas} className='conta-buscar_ul col-12' placeholder='Buscar' />
+                <img src="images/Icons/icons-pink/buscarpink@3x.png" /> aasas
+            </div>
             <MisMascotas />
             <Link to={"/estados"}>
                 <div className='b-border col-12 d-flex justify-content-between align-items-center'>

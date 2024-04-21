@@ -6,7 +6,7 @@ export default function Buscar() {
     return (
         <div className='conta-buscar d-flex justify-content-between'>
             <input type='text' className='conta-buscar_ul' placeholder='Buscar' />
-            <img src="images/Icons/icons-pink/buscarpink@3x.png" />
+            <img src="images/Icons/icons-pink/buscarpink@3x.png" /> aasas
         </div>
     )
 }
