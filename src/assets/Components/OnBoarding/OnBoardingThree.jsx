@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './OnBoarding.css'
@@ -6,7 +7,7 @@ export default function OnBoardingThree() {
     return (
         <div className='row'>
             <div className='med col-12 d-flex justify-content-end align-items-start'>
-                <img src="public/images/Icons/cerrar@3x.png" alt="" />
+                {/* <img src="public/images/Icons/cerrar@3x.png" alt="" /> */}
             </div>
             <div className='o-med contenedor-img col-12 d-flex flex-column'>
                 <Link to='/boarding'></Link>

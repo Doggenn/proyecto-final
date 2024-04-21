@@ -24,7 +24,7 @@ export default function Mascotas() {
 
     return (
 
-        <div className='container'>
+        <div className='container col-md-4 offset-md-4'>
 
             <Buscar />
             <MisMascotas />
@@ -46,10 +46,12 @@ export default function Mascotas() {
                 <div className='carta'>
 
                     {mascotas.map((mascota, index) =>
+
                         <Link key={index} to={`/mascotas/${mascota.id}`}>
                             <div className='card-animal' >
-                                <div className='tamano-img'>
-                                    <img className='t-max' src={mascota.imagen} alt={mascota.nombre} />
+                                <div className='image-container' >
+                                    <img className='mascotasLike' src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/A33187F6-3639-4EE6-BCF2-DC4989BFE3EA.png" alt="Favorito" />
+                                    <img className='t-max img-fluid mascotasImg' src={mascota.imagen} alt={mascota.nombre} />
                                 </div>
                                 <div className='text-span d-flex justify-content-between align-items-center'>
                                     <h2 className='text-mas'> {mascota.nombre}</h2>
@@ -60,41 +62,9 @@ export default function Mascotas() {
                     )}
                 </div>
             </div>
-        </div>
+        </div >
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // <div className='container row'>
-        //     <div className='card col-12' >
-        //         {mascotas.map((item, index) => (
-        //         <figure className='fig' key={index}>
-        //             <img className='fig-img' src={item.imagen} alt="" />
-        //         </figure>
-        //         <div>
-        //             <div>
-        //                 <h2>{item.nombre}</h2>
-        //             </div>
-        //             <div>
-        //                 <span>{item.ubicacion}</span>
-        //             </div>
-        //         </div>
-        //         ))}
-        //     </div>
-        // </div>
 
     )
 }

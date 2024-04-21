@@ -9,23 +9,23 @@ export default function FormularioAdopcion() {
     return (
         <div className='formulario'>
             <div className="">
-                <form className='form' action="" method="post">
+                <form className='form col-12' action="" method="post">
                     {page === 1 && (
                         <fieldset className='form__group'>
                             <h2>Tus datos</h2>
-                            <div className="">
-                                <p><input type="text" placeholder='Nombre y apellidos' /></p>
-                                <p><input type="email" name="" id="" placeholder='Email' /></p>
-                                <p><input type="number" name="" id="" placeholder='Teléfono' /></p>
-                                <input type="text" placeholder='DNI' />
+                            <div className="form ">
+                                <p><input className='col-12' type="text" placeholder='Nombre y apellidos' /></p>
+                                <p><input className='col-12' type="email" name="" id="" placeholder='Email' /></p>
+                                <p><input className='col-12' type="number" name="" id="" placeholder='Teléfono' /></p>
+                                <input className='col-12' type="text" placeholder='DNI' />
                             </div>
                             <h2>Dirección</h2>
                             <div className="">
-                                <p><input type="text" placeholder='Calle, número y piso' /></p>
-                                <p><input type="number" name="" id="" placeholder='Código postal' /></p>
-                                <p><input type="text" placeholder='Ciudad' /></p>
+                                <p><input className='col-12' type="text" placeholder='Calle, número y piso' /></p>
+                                <p><input className='col-12' type="number" name="" id="" placeholder='Código postal' /></p>
+                                <p><input className='col-12' type="text" placeholder='Ciudad' /></p>
                                 <div>
-                                    <input type="checkbox" name="" id="condiciones" />
+                                    <input className='col-12' type="checkbox" name="" id="condiciones" />
                                     <label htmlFor="condiciones">Acepto los términos y condiciones de la adopcion</label>
                                 </div>
 
@@ -51,23 +51,23 @@ export default function FormularioAdopcion() {
                                 </div>
                             </div>
                             <div className="">
-                                <p><input type="text" placeholder='¿Cuales?' /></p>
-                                <p><input type="text" placeholder='¿Se lleva bien con otros animales?' /></p>
+                                <p><input className='col-12' type="text" placeholder='¿Cuales?' /></p>
+                                <p><input className='col-12' type="text" placeholder='¿Se lleva bien con otros animales?' /></p>
                             </div>
                             <p className='formPregunta'>¿Por qué has elegido adoptar?</p>
-                            <input id="eleccion" type="text" />
+                            <input className='col-12' id="eleccion" type="text" />
                             <p className='formPregunta'>¿Conoces las necesidades del animal?</p>
-                            <input id="eleccion" type="text" />
+                            <input className='col-12' id="eleccion" type="text" />
                             <p className='formPregunta'>¿Conoces sus gastos?</p>
-                            <input id="eleccion" type="text" />
+                            <input className='col-12' id="eleccion" type="text" />
                             <p className='formPregunta'>¿Conoces su alimentación?</p>
-                            <input id="eleccion" type="text" />
+                            <input className='col-12' id="eleccion" type="text" />
                         </fieldset>
                     )}
                     {page === 3 && (
                         <fieldset>
                             <p className='formPregunta'>¿Dónde vives?</p>
-                            <input id="eleccion" type="text" placeholder='Piso, casa, chalet...' />
+                            <input className='col-12' id="eleccion" type="text" placeholder='Piso, casa, chalet...' />
                             <div className='formAnimales'>
                                 <div className='formAnimales_int'>
                                     <p className='formPregunta'>¿Vives de alquiler?</p>
@@ -173,14 +173,14 @@ export default function FormularioAdopcion() {
                                     </div>
                                 </div>
                             </div>
-                           
-                        </fieldset>)} 
+
+                        </fieldset>)}
                     {page > 1 && (
-                        <button className="button" type="button" onClick={()=>setPage(page -1)}>Retroceder</button>
+                        <button className="button" type="button" onClick={() => setPage(page - 1)}>Retroceder</button>
                     )}
                     {page < 3 && <button className="button" type="button" onClick={() => setPage(page + 1)}>Siguiente</button>}
-                    {page === 3 &&  <button className="button" type="submit">Enviar</button>}
-                    
+                    {page === 3 && <button className="button" type="submit">Enviar</button>}
+
                 </form>
             </div>
         </div>
