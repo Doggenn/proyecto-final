@@ -4,7 +4,28 @@
 .mascotaImagen img{
     height: 100%;
 }
-
+.mascotasImagen{
+    position: relative;
+}
+.btn{
+    margin: 10px;
+}
+.btn-outline-danger{
+    border: 1px solid rgb(250 156 147);
+    color: rgb(250 156 147);
+}
+.btn-outline-danger:hover {
+    border: 1px solid rgb(250 156 147);
+    background-color:  rgb(250 156 147);
+}
+.btn-danger:hover {
+    border: 1px solid rgb(250 156 147);
+    background-color: rgb(250 156 147);
+}
+.btn-danger {
+    border: 1px solid rgb(250 156 147);
+    background-color: rgb(250 156 147);
+}
 .mascotaNombre{
     display: flex;
     justify-content: center;

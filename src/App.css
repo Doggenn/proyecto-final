@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  padding-bottom: 100px;
+  padding-top: 30px;
 }
 .buscador_mapa{
   z-index: 5000;
