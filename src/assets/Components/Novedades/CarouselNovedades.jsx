@@ -20,7 +20,7 @@ export default function CarouselNovedades() {
                         <div className='imagen'>
                             <img onClick={() => setPage(page + 1)} src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/CC600FC1-2637-4139-9A06-45697A688810.png" alt="" />
                         </div>
-                        <div className='d-flex flex-column'>
+                        <div className='text-color d-flex flex-column'>
 
                             <h2>Estado de la adopcion</h2>
                             <p>Revisa el proceso de tus adopciones en curso</p>
@@ -41,7 +41,7 @@ export default function CarouselNovedades() {
                         <div className='imagen'>
                             <img onClick={() => setPage(page + 1)} src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/F01C2434-2928-4732-824B-3F1A69442BBC.png" alt="" />
                         </div>
-                        <div className='d-flex flex-column'>
+                        <div className='text-color d-flex flex-column'>
 
                             <h2>Apadrinar</h2>
                             <p>Revisa el proceso de tus apadrinados en curso</p>
@@ -63,7 +63,7 @@ export default function CarouselNovedades() {
                         <div className='imagen'>
                             <img onClick={() => setPage(1)} src="https://cdn.zeplin.io/5e2888579d7785572934fb93/assets/E3B3BC30-6328-4724-8E7A-3B95FDA579C4.png" alt="" />
                         </div>
-                        <div className='d-flex flex-column'>
+                        <div className='text-color d-flex flex-column'>
 
                             <h2>Estado de la adopcion</h2>
                             <p>Revisa el proceso de tus adopciones en curso</p>

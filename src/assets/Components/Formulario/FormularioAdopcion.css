@@ -1,28 +1,68 @@
-.formulario{
-    height:90%;
-    width: 95%;
-}
-.formularioForm{
+.formularioForm {
     width: 100%;
-    
+
 }
-.formAnimales{
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-}
-.formFlex{
+
+.formFlex {
     display: flex;
     flex-direction: column
 }
-.formAnimales_int{
-    align-content: center;
-    margin: 0 auto;
-    display: flex;
-}
-.formAnimales_int_b{
-    padding: 5px;
-}
-.formPregunta{
+
+
+.formPregunta {
     font-size: large;
+    color: #3d3636;
+    font-weight: 400 !important;
+}
+
+.modif h3 {
+    padding: 0 !important;
+    margin-right: 10px;
+    font-size: large;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.form-princ {
+    display: inline-flex;
+    margin: 0 10px;
+}
+
+.form input {
+    border: 0;
+    border-bottom: 1px solid #9cb6b8;
+}
+
+.text-t {
+    color: #00748E;
+}
+
+.encabezado h2 {
+    font-weight: 200;
+    color: rgb(45 43 43 / 82%);
+}
+
+.boton-continuar {
+    border: 0;
+    background-color: transparent;
+    background-color: #FA9C92;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 20px;
+
+}
+
+.encabezado {
+    width: 100%;
+}
+
+.imagen-volver {
+    margin-right: 30px;
+    width: 7%;
+    height: 35px;
+}
+
+.volver {
+    width: 100%;
 }

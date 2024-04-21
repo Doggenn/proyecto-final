@@ -23,8 +23,12 @@ import MascotasID from './assets/Components/Mascotas/Mascota/Mascota';
 import Filtros from './assets/Components/Filtros/Filtros';
 import Novedades from "./assets/Components/Novedades/Novedades";
 import CarouselNovedades from "./assets/Components/Novedades/CarouselNovedades";
+import VentanaEmergente from "./assets/Components/VentanaEmergente/VentanaEmergente";
+import { useState } from "react"; 7
+import BtnFilMap from './assets/Components/BtnFilMap/btnFilMap'
 
 function App() {
+
 
   return (
     <>
@@ -50,6 +54,8 @@ function App() {
           <Route path="/filtros" element={<Filtros />} />
           <Route path="/novedades" element={<Novedades />} />
           <Route path="/carousel" element={<CarouselNovedades />} />
+          <Route path="/ventana" element={<VentanaEmergente />} />
+          <Route path="/filtromap" element={<BtnFilMap />} />
 
         </Routes>
         <Menu></Menu>
