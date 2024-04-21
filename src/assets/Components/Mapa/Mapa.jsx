@@ -94,7 +94,7 @@ const MapContainer = () => {
     return (
         <>
             <BuscarFiltro/> 
-     <div id="mi_mapa" style={{ height: "90vh", width: "100%" }} />   
+     <div id="mi_mapa" style={{ height: "79vh", width: "100%" }} />   
     </>);
 };
 

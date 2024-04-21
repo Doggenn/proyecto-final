@@ -11,13 +11,13 @@ const BuscarFiltro = () => {
     return (
         <>
             <div className='buscador'>
-                <div className='conta-buscar d-flex justify-content-betwee'>
+                <div className='conta-buscar-f d-flex justify-content-betwee'>
                     <input type='text' className='conta-buscar_ul' placeholder='Buscar' />
-                    <img src="public/images/Icons/icons-pink/buscarpink@3x.png" alt="" />
+                    <img src="images/Icons/icons-pink/buscarpink@3x.png" alt="" />
                 </div>
 
                 <div className='icono-filt' onClick={handleFiltroClick}>
-                    <img className='icono-filtro' src="public/images/Icons/icons-pink/filtros@3x.png" alt="" />
+                    <img className='icono-filtro' src="images/Icons/icons-pink/filtros@3x.png" alt="" />
                 </div>
             </div>
         
