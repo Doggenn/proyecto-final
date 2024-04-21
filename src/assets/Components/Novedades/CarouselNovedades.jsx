@@ -9,12 +9,12 @@ export default function CarouselNovedades() {
         <div className=' col-12 md-4 d-flex flex-column align-items-center' >
             {page === 1 && (
                 <div className="c-content " style={{
-                    backgroundColor: '#BDD2D6'
-                    // backgroundImage: `url('https://previews.123rf.com/images/karenr/karenr1603/karenr160300065/53466268-la-pata-de-perro-azul-la-impresi%C3%B3n-del-modelo-del-azulejo-de-repetici%C3%B3n-de-fondo-que-se-repite-sin.jpg')`,
-                    // backgroundSize: 'cover',
-                    // backgroundRepeat: 'no-repeat',
-                    // width: '100%',
-                    // opacity: 0.5
+                    backgroundColor: '#BDD2D6',
+                    backgroundImage: `url('https://previews.123rf.com/images/karenr/karenr1603/karenr160300065/53466268-la-pata-de-perro-azul-la-impresi%C3%B3n-del-modelo-del-azulejo-de-repetici%C3%B3n-de-fondo-que-se-repite-sin.jpg')`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    width: '100%',
+                    opacity: 0.5
                 }}>
                     <div className=' sombra d-flex'>
                         <div className='imagen'>
@@ -32,11 +32,11 @@ export default function CarouselNovedades() {
             {page === 2 && (
                 <div className="c-content " style={{
                     backgroundColor: '#BDD2D6',
-                    // backgroundImage: `url('https://previews.123rf.com/images/karenr/karenr1603/karenr160300065/53466268-la-pata-de-perro-azul-la-impresi%C3%B3n-del-modelo-del-azulejo-de-repetici%C3%B3n-de-fondo-que-se-repite-sin.jpg')`,
-                    // backgroundSize: 'cover',
-                    // backgroundRepeat: 'no-repeat',
-                    // width: '100%',
-                    // opacity: 0.5
+                    backgroundImage: `url('https://previews.123rf.com/images/karenr/karenr1603/karenr160300065/53466268-la-pata-de-perro-azul-la-impresi%C3%B3n-del-modelo-del-azulejo-de-repetici%C3%B3n-de-fondo-que-se-repite-sin.jpg')`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    width: '100%',
+                    opacity: 0.5
                 }}>
                     <div className='sombra d-flex'>
                         <div className='imagen'>
@@ -53,12 +53,12 @@ export default function CarouselNovedades() {
             )}
             {page === 3 && (
                 <div className="c-content" style={{
-                    backgroundColor: '#BDD2D6'
-                    // backgroundImage: `url('https://previews.123rf.com/images/karenr/karenr1603/karenr160300065/53466268-la-pata-de-perro-azul-la-impresi%C3%B3n-del-modelo-del-azulejo-de-repetici%C3%B3n-de-fondo-que-se-repite-sin.jpg')`,
-                    // backgroundSize: 'cover',
-                    // backgroundRepeat: 'no-repeat',
-                    // width: '100%',
-                    // opacity: 0.5
+                    backgroundColor: '#BDD2D6',
+                    backgroundImage: `url('https://previews.123rf.com/images/karenr/karenr1603/karenr160300065/53466268-la-pata-de-perro-azul-la-impresi%C3%B3n-del-modelo-del-azulejo-de-repetici%C3%B3n-de-fondo-que-se-repite-sin.jpg')`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    width: '100%',
+                    opacity: 0.5
                 }}>
                     <div className='sombra d-flex'>
 

@@ -28,25 +28,41 @@ export default function Novedades() {
     }, [])
 
     return (
-        <div className='contenedor-novedades '>
-            <div className='d-flex col-md-4 offset-md-4' style={{ color: '#00748E', marginTop: '20px' }}>
-                <h1>¡Hola Celia!</h1>
-            </div>
-            <CarouselNovedades />
-            <div className='titl col-md-4 offset-md-4 col-11 d-flex'>
-                <h3>Novedades</h3>
-            </div>
-            {novedades.map((novedad, index) => (
-                <div className='carta-novedades col-md-4 offset-md-4' key={index}>
-                    <div className='img-novedades'>
-                        <img src={novedad.imagen} alt="novedades" />
-                    </div>
-                    <div className='text-novedades'>
-                        <h2>{novedad.titulo}</h2>
+        <>
+            <div className="container-fluid-div">
+                <div className="row">
+                    <div className="col d-flex justify-content-center align-items-center">
+
+                        <div className='contenedor-novedades center '>
+                            <div className='d-flex col-md-4 offset-md-4' style={{ color: '#00748E', marginTop: '20px' }}>
+                                <h1>¡Hola Celia!</h1>
+                            </div>
+                            <CarouselNovedades />
+                            <div className='titl  d-flex'>
+                                <h3>Novedades</h3>
+                            </div>
+                            {novedades.map((novedad, index) => (
+                                <div className='carta-novedades ' key={index}>
+                                    <div className='img-novedades'>
+                                        <img src={novedad.imagen} alt="novedades" />
+                                    </div>
+                                    <div className='text-novedades'>
+                                        <h2>{novedad.titulo}</h2>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+
                     </div>
                 </div>
-            ))}
+            </div> 
 
-        </div>
+
+
+
+
+
+        </>
     )
 }
