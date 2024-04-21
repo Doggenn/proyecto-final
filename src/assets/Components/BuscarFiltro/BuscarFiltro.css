@@ -1,0 +1,16 @@
+.buscador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.icono-filt{
+    margin-left: 10px;
+}
+
+.icono-filtro{
+    height: 29px;
+    width: 20px;
+}
