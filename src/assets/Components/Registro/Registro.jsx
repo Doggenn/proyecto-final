@@ -27,14 +27,14 @@ export default function Registro() {
                     <div className='form-1'>
                         <div>
                             <div className='botonesOne'>
-                                <Link className='btn btn-info registroBotones' onClick={handleUsuarioClick} to="/login">
+                                <Link className='btn btn-info registroBoton' onClick={handleUsuarioClick} to="/login">
                                 Usuario
                                 </Link>
-                                <Link className='btn btn-info registroBotones' onClick={handleProtectoraClick} to="/login">
+                                <Link className='btn btn-info registroBoton' onClick={handleProtectoraClick} to="/login">
                                     Asociación protectora
                                 </Link>
                             </div>
-                                <Link onClick={handleRegistrarseOtroMomentoClick} to="/login">
+                                <Link className='registroLink' onClick={handleRegistrarseOtroMomentoClick} to="/">
                                     Registrarse en otro momento
                                 </Link>
                             </div>

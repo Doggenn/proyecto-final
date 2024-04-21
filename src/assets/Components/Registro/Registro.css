@@ -22,7 +22,12 @@
     text-align: center;
     margin: -5px;
 }
-
+.registroBoton{
+    background-color: rgb(1 116 142);
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+}
 .botonesOne {
     display: flex;
     color: #08060e;
@@ -34,13 +39,16 @@
 
 .botonesOne button {
     margin-top: 10px;
-    background-color: #1173da;
+    background-color: rgb(1 116 142);
     color: #fff;
     border: none;
     padding: 8px 16px;
 }
 
-.botonesOne p {
+.registroLink {
     margin-top: 10px;
     color: #000;
+    text-decoration: none;
+    padding: 13px;
+    font-size: 12px;
 }
