@@ -1,6 +1,6 @@
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import './App.css'
-import Home from './assets/Pages/Home/Home'
+
 import Menu from './assets/Pages/Menu/Menu'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Usuario from './assets/Components/Usuario/Usuario';
@@ -24,37 +24,27 @@ import Filtros from './assets/Components/Filtros/Filtros';
 import Novedades from "./assets/Components/Novedades/Novedades";
 import CarouselNovedades from "./assets/Components/Novedades/CarouselNovedades";
 
+
+function parseJwt(token) {
+
+  const base64Url = token.split('.')[1];
+  const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+  const jsonPayload = decodeURIComponent(window.atob(base64).split('').map(function (c) {
+    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+  }).join(''));
+
+  return JSON.parse(jsonPayload);
+}
+
+let tokenExisteAndStillValid = (parseJwt(localStorage.getItem('token')).exp * 1000 > Date.now());
+
+
 function App() {
 
   return (
-    <>
-      <Router>
-        <Routes>
-          <Route path="/sweetHomeAlabama" element={<Home />} />
-          <Route path="/usuario" element={<Usuario />} />
-          <Route path="/mascotas" element={<Mascotas />} />
-          <Route path="/registro" element={<Registro />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/mas" element={< Mas />} />
-          <Route path="/perfilmascotas" element={<PerfilMascotas />} />
-          <Route path="/formulario" element={<FormularioAdopcion />} />
-          <Route path="/estados" element={<EstadoAdopcion />} />
-          <Route path="/mapa" element={<Mapa />} />
-          <Route path="/boardingone" element={<OnBoardingOne />} />
-          <Route path="/boardingtwo" element={<OnBoardingTwo />} />
-          <Route path="/boardingthree" element={<OnBoardingThree />} />
-          <Route path="/boardingfour" element={<OnBoardingFour />} />
-          <Route path="/asociacion" element={<LoginAsociacion />} />
-          <Route path="/carrusel" element={<Carrusel />} />
-          <Route path="/mascotas/:id" element={<MascotasID />} />
-          <Route path="/filtros" element={<Filtros />} />
-          <Route path="/" element={<Novedades />} />
-          <Route path="/carousel" element={<CarouselNovedades />} />
 
-        </Routes>
-        <Menu></Menu>
-      </Router>
-    </>
+    <>{tokenExisteAndStillValid ? <Novedades /> : <Login />}</>
+
   )
 }
 

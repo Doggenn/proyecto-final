@@ -3,29 +3,45 @@ import './Novedades.css'
 import axios from 'axios';
 import CarouselNovedades from './CarouselNovedades';
 
+
 export default function Novedades() {
 
     const [novedades, setNovedades] = useState([])
     const [usuarios, setUsuarios] = useState([])
+    const [usuarioSession, SetUsuariosession] = useState([])
     const urlBbdd = "https://servidor-protectora.vercel.app/api/novedades"
     const url = "https://servidor-protectora.vercel.app/api/usuario"
 
 
     const getNovedades = async () => {
         const res = await axios.get(urlBbdd)
-        console.log(res.data);
         setNovedades(res.data)
     }
 
     const getUsuarios = async () => {
         const res = await axios.get(url)
-        console.log(res.data);
         setUsuarios(res.data)
     }
+
+    function parseJwt(token) {
+
+        const base64Url = token.split('.')[1];
+        const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+        const jsonPayload = decodeURIComponent(window.atob(base64).split('').map(function (c) {
+            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+        }).join(''));
+
+
+        SetUsuariosession(JSON.parse(jsonPayload));
+
+    }
+
     useEffect(() => {
         getNovedades(),
-            getUsuarios()
+            getUsuarios(),
+            parseJwt(localStorage.getItem("token"))
     }, [])
+
 
     return (
         <>
@@ -35,7 +51,7 @@ export default function Novedades() {
 
                         <div className='contenedor-novedades center '>
                             <div className='d-flex col-md-4 offset-md-4' style={{ color: '#00748E', marginTop: '20px' }}>
-                                <h1>¡Hola Celia!</h1>
+                                <h1>¡Hola {usuarioSession.username}! </h1>
                             </div>
                             <CarouselNovedades />
                             <div className='titl  d-flex'>
@@ -56,10 +72,7 @@ export default function Novedades() {
 
                     </div>
                 </div>
-            </div> 
-
-
-
+            </div>
 
 
 
