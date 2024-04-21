@@ -1,0 +1,90 @@
+.filMap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    height: 50vh;
+    margin-bottom: 28px;
+    padding: 0px;
+}
+
+.tipoFilMap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.serviciosFilMap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.btn-aplicarFilMap {
+    margin-top: 30px;
+    margin: 3px;
+    background-color: rgb(236, 155, 148);
+    color: white;
+    width: 38%;
+}
+
+.btn-servicioFilMap {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 1px solid rgb(189 210 214);
+}
+
+.btn-servicioFilMap:hover {
+    border: 2px solid rgb(245 166 35);
+}
+
+.btn-tipoFilMap {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 1px solid rgb(189 210 214);
+}
+
+.btn-tipoFilMap:hover {
+    border: 2px solid rgb(245 166 35);
+    background-image: url();
+}
+
+.aplyDeletFilMap {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 20px;
+    flex-direction: row;
+    align-items: center;
+    width: 35%;
+}
+
+.buttonFilMap {
+    margin-right: 10px;
+    border: 1px solid gray;
+}
+
+.img_filMap {
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+}
+
+.p_filMap {
+    color: #01748e;
+}
+
+.btn-borrarFilMap {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 20px;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid rgb(236, 155, 148);
+
+}
