@@ -54,3 +54,15 @@
     margin: 10px;
     width: 270px;
 }
+
+.btn-close {
+    margin-right: 23px;
+    display: flex;
+    justify-content: end;
+}
+
+.b-uton {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
