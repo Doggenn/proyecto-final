@@ -11,6 +11,8 @@ export default function Login() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [loginSuccessful, setLoginSuccessful] = useState(false);
+    const [mensajeError, setMensajeError] = useState('')
+    const [usuarioSessionNombre, setSessionNombre] = useState('');
 
     const [showPassword, setShowPassword] = useState(false);
     const togglePasswordVisibility = () => {
@@ -51,6 +53,8 @@ export default function Login() {
             } else {
 
                 setLoginSuccessful(false);
+                setMensajeError(result.message);
+
 
             }
 
@@ -63,7 +67,56 @@ export default function Login() {
 
     }
 
+
+    const handdleRegistro = () => {
+
+
+        const data = {
+
+            username: username,
+            password: password
+
+        }
+
+        fetch('http://localhost:3000/registro', {
+
+            method: 'POST',
+            headers: {
+
+                'Content-Type': 'application/json'
+
+            },
+            body: JSON.stringify(data)
+
+        }).then(response => response.json()).then(result => {
+
+
+            if (result.token) {
+
+                localStorage.setItem('token', result.token)
+                setLoginSuccessful(true);
+
+            } else {
+
+                setLoginSuccessful(false);
+                setMensajeError(result.message);
+
+            }
+
+
+        }).catch(error => {
+
+            console.log(error);
+
+        })
+
+    }
+
+
+
     useEffect(() => {
+
+        console.log(localStorage.getItem('token'));
 
         if (localStorage.getItem('token')) {
 
@@ -71,7 +124,9 @@ export default function Login() {
 
         }
 
+
     }, []);
+
 
 
     return (
@@ -87,9 +142,9 @@ export default function Login() {
                             <p>¡Hola! para continuar,inicia sesión <br />o crea una cuenta</p>
                         </div>
                         <div className='form-1'>
-                            <form className='formulario'>
+                            <form className='formulario1'>
                                 <div className='correo'>
-                                    <input className='input_L' type="text" placeholder='aei@gmail.com' onChange={(event) => { setUsername(event.target.value) }} />
+                                    <input className='input_L' type="email" placeholder='aei@gmail.com' onChange={(event) => { setUsername(event.target.value) }} />
                                 </div>
                                 <br />
                                 <div className="password">
@@ -103,10 +158,20 @@ export default function Login() {
                             </form>
                             <div className='botones'>
                                 <button onClick={handdleLogin} className="btn btn-primary">Inicia sesión</button>
-                                <button className="btn btn-outline-primary">Crear cuenta</button>
+                                <button onClick={handdleRegistro} className="btn btn-outline-primary">Crear cuenta</button>
                             </div>
+                            {mensajeError ?
 
+                                <div class="alert alert-danger" role="alert">
+                                    {mensajeError}
+                                </div> :
+
+                                <div class="" role="alert">
+
+                                </div>
+                            }
                         </div>
+
                     </div>
                 </div >
             </div >}</>
