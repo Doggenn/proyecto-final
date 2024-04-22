@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 
 export default function CarouselNovedades() {
@@ -9,12 +9,12 @@ export default function CarouselNovedades() {
         <div className=' col-12 md-4 d-flex flex-column align-items-center' >
             {page === 1 && (
                 <div className="c-content " style={{
-                    backgroundColor: '#BDD2D6'
-                    // backgroundImage: `url('https://previews.123rf.com/images/karenr/karenr1603/karenr160300065/53466268-la-pata-de-perro-azul-la-impresi%C3%B3n-del-modelo-del-azulejo-de-repetici%C3%B3n-de-fondo-que-se-repite-sin.jpg')`,
-                    // backgroundSize: 'cover',
-                    // backgroundRepeat: 'no-repeat',
-                    // width: '100%',
-                    // opacity: 0.5
+                    backgroundColor: '#BDD2D6',
+                    backgroundImage: `url('https://previews.123rf.com/images/karenr/karenr1603/karenr160300065/53466268-la-pata-de-perro-azul-la-impresi%C3%B3n-del-modelo-del-azulejo-de-repetici%C3%B3n-de-fondo-que-se-repite-sin.jpg')`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    width: '100%',
+                    opacity: 0.5
                 }}>
                     <div className=' sombra d-flex'>
                         <div className='imagen'>
@@ -30,12 +30,13 @@ export default function CarouselNovedades() {
                 </div>
             )}
             {page === 2 && (
-                <div className="c-content" style={{
+                <div className="c-content " style={{
+                    backgroundColor: '#BDD2D6',
                     backgroundImage: `url('https://previews.123rf.com/images/karenr/karenr1603/karenr160300065/53466268-la-pata-de-perro-azul-la-impresi%C3%B3n-del-modelo-del-azulejo-de-repetici%C3%B3n-de-fondo-que-se-repite-sin.jpg')`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     width: '100%',
-                    // opacity: 0.5
+                    opacity: 0.5
                 }}>
                     <div className='sombra d-flex'>
                         <div className='imagen'>
@@ -52,11 +53,12 @@ export default function CarouselNovedades() {
             )}
             {page === 3 && (
                 <div className="c-content" style={{
+                    backgroundColor: '#BDD2D6',
                     backgroundImage: `url('https://previews.123rf.com/images/karenr/karenr1603/karenr160300065/53466268-la-pata-de-perro-azul-la-impresi%C3%B3n-del-modelo-del-azulejo-de-repetici%C3%B3n-de-fondo-que-se-repite-sin.jpg')`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     width: '100%',
-                    // opacity: 0.5
+                    opacity: 0.5
                 }}>
                     <div className='sombra d-flex'>
 
@@ -73,16 +75,16 @@ export default function CarouselNovedades() {
 
                 </div>
             )}
-            <div className='boton d-flex justify-content-center' >
+            <div className='boton d-flex justify-content-center ' >
                 <div className='boton-indiv' style={{ backgroundColor: page === 1 ? 'salmon' : 'white', width: '20px', height: '20px', borderRadius: '50%', border: '2px solid salmon' }} onClick={() => setPage(1)}>
 
-                </div >
+                </div>
 
                 <div className='boton-indiv' style={{ backgroundColor: page === 2 ? 'salmon' : 'white', width: '20px', height: '20px', borderRadius: '50%', border: '2px solid salmon' }} onClick={() => setPage(2)}></div>
 
                 <div className='boton-indiv' style={{ backgroundColor: page === 3 ? 'salmon' : 'white', width: '20px', height: '20px', borderRadius: '50%', border: '2px solid salmon' }} onClick={() => setPage(3)}></div>
             </div>
 
-        </div >
+        </div>
     )
 }

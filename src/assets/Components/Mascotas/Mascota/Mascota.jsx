@@ -9,11 +9,11 @@ export default function MascotasID() {
     const [mascota, setMascotas] = useState([])
     const { id } = useParams();
     const getMascotas = async () => {
-        const res = await axios.get("https://servidor-protectora.vercel.app/api/mascotas/" + id)
+        const res = await axios.get("https://servidor-protectora-v2.vercel.app/getMascota/" + id)
         console.log(res.data);
         setMascotas(res.data)
     }
-    
+
     useEffect(() => {
         getMascotas()
     }, [])
@@ -47,9 +47,9 @@ export default function MascotasID() {
                 {page === 1 && (
                     <>
                         <div className='mascotaOpciones'>
-                            <h4 className='mascotaOpcionesDatos' onClick={()=>setPage(1)}>Datos</h4>
-                            <h4 onClick={()=>setPage(2)}>Salud</h4>
-                            <h4 onClick={()=>setPage(3)}>Adopción</h4>
+                            <h4 className='mascotaOpcionesDatos' onClick={() => setPage(1)}>Datos</h4>
+                            <h4 onClick={() => setPage(2)}>Salud</h4>
+                            <h4 onClick={() => setPage(3)}>Adopción</h4>
                         </div>
                         <div className='mascotaDatos'>
                             <div className='container'>
@@ -118,7 +118,7 @@ export default function MascotasID() {
                                                 <h3>Personanidad</h3>
                                             </div>
                                             <div className="mascotaPersonalidad" dangerouslySetInnerHTML={{ __html: mascota.personalidad }}>
-                                                
+
                                             </div>
                                         </div>
                                         <div className="mascotasDescripcion">
@@ -136,9 +136,9 @@ export default function MascotasID() {
                 {page === 2 && (
                     <>
                         <div className='mascotaOpciones'>
-                            <h4 onClick={()=>setPage(1)}>Datos</h4>
-                            <h4 className='mascotaOpcionesSalud' onClick={()=>setPage(2)}>Salud</h4>
-                            <h4 onClick={()=>setPage(3)}>Adopción</h4>
+                            <h4 onClick={() => setPage(1)}>Datos</h4>
+                            <h4 className='mascotaOpcionesSalud' onClick={() => setPage(2)}>Salud</h4>
+                            <h4 onClick={() => setPage(3)}>Adopción</h4>
                         </div>
                         <div className='mascotaSalud'>
                             <div className='mascotaDatos'>
@@ -214,9 +214,9 @@ export default function MascotasID() {
                 {page === 3 && (
                     <>
                         <div className='mascotaOpciones'>
-                            <h4 onClick={()=>setPage(1)}>Datos</h4>
-                            <h4 onClick={()=>setPage(2)}>Salud</h4>
-                            <h4 className='mascotaOpcionesAdopcion' onClick={()=>setPage(3)}>Adopción</h4>
+                            <h4 onClick={() => setPage(1)}>Datos</h4>
+                            <h4 onClick={() => setPage(2)}>Salud</h4>
+                            <h4 className='mascotaOpcionesAdopcion' onClick={() => setPage(3)}>Adopción</h4>
                         </div>
                         <div className='mascotaAdopcion'>
                             <div className='container'>
