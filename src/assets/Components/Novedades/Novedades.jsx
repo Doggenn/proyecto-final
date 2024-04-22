@@ -61,7 +61,7 @@ export default function Novedades() {
                     <div className="col d-flex justify-content-center align-items-center">
 
                         <div className='contenedor-novedades center '>
-                            <div className='d-flex col-md-4 offset-md-4' style={{ color: '#00748E', marginTop: '20px' }}>
+                            <div className='d-flex col-md-2 offset-md-2' style={{ color: '#00748E', marginTop: '20px' }}>
                                 <h1>¡Hola {usuarioSession.username}! </h1>
                             </div>
                             <CarouselNovedades />
