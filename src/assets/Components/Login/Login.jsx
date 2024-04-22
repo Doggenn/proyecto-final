@@ -1,11 +1,10 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
 import './Login.css';
-import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from '../Home/Home';
-import Novedades from '../Novedades/Novedades';
+
 
 export default function Login() {
 
@@ -19,9 +18,10 @@ export default function Login() {
     };
 
 
-    const handdleLogin = (e) => {
 
-        e.preventDefault();
+
+    const handdleLogin = () => {
+
 
         const data = {
 
@@ -43,10 +43,7 @@ export default function Login() {
         }).then(response => response.json()).then(result => {
 
 
-
             if (result.token) {
-
-                console.log("hola");
 
                 localStorage.setItem('token', result.token)
                 setLoginSuccessful(true);
@@ -58,20 +55,28 @@ export default function Login() {
             }
 
 
-
         }).catch(error => {
 
             console.log(error);
 
         })
 
-
     }
+
+    useEffect(() => {
+
+        if (localStorage.getItem('token')) {
+
+            setLoginSuccessful(true);
+
+        }
+
+    }, []);
 
 
     return (
 
-        <>  {loginSuccessful ? <Novedades /> :
+        <>  {loginSuccessful ? <Home /> :
             <div className='totalBorder'>
                 <div className='total'>
                     <div className='titulo-im'>
@@ -82,7 +87,6 @@ export default function Login() {
                             <p>¡Hola! para continuar,inicia sesión <br />o crea una cuenta</p>
                         </div>
                         <div className='form-1'>
-
                             <form className='formulario'>
                                 <div className='correo'>
                                     <input className='input_L' type="text" placeholder='aei@gmail.com' onChange={(event) => { setUsername(event.target.value) }} />
@@ -96,13 +100,7 @@ export default function Login() {
                                         </div>
                                     </button>
                                 </div>
-                                <div>
-                                    <Link to="/">
-                                        <p>¿Has olvidado tu contraseña?</p>
-                                    </Link>
-                                </div>
                             </form>
-
                             <div className='botones'>
                                 <button onClick={handdleLogin} className="btn btn-primary">Inicia sesión</button>
                                 <button className="btn btn-outline-primary">Crear cuenta</button>

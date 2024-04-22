@@ -26,6 +26,7 @@ export default function Home() {
 
     return (
         <>
+
             <Router>
                 <Routes>
                     <Route path="" element={<Novedades />} />
