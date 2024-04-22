@@ -1,97 +1,120 @@
-.mascotaImagen{
+.mascotaImagen {
     height: 25vh;
 }
-.mascotaImagen img{
+
+.mascotaImagen img {
     height: 100%;
 }
-.mascotasImagen{
+
+.mascotasImagen {
     position: relative;
 }
-.btn{
+
+.btn {
     margin: 10px;
 }
-.btn-outline-danger{
+
+.btn-outline-danger {
     border: 1px solid rgb(250 156 147);
     color: rgb(250 156 147);
 }
+
 .btn-outline-danger:hover {
     border: 1px solid rgb(250 156 147);
-    background-color:  rgb(250 156 147);
+    background-color: rgb(250 156 147);
 }
+
 .btn-danger:hover {
     border: 1px solid rgb(250 156 147);
     background-color: rgb(250 156 147);
 }
+
 .btn-danger {
     border: 1px solid rgb(250 156 147);
     background-color: rgb(250 156 147);
 }
-.mascotaNombre{
+
+.mascotaNombre {
     display: flex;
     justify-content: center;
     align-items: center
 }
-.mascotaIco{
+
+.mascotaIco {
     height: 20px;
 }
+
 .mascotaIcoShare {
     height: 30px;
 }
-.mascotaOpciones{
+
+.mascotaOpciones {
     display: flex;
     justify-content: center;
 }
-.mascotaOpciones h4{
+
+.mascotaOpciones h4 {
     padding: 0 25px;
 }
+
 .mascotaOpcionesDatos {
     color: rgb(1, 116, 142);
     border-bottom: 3px solid rgb(250 156 147);
 }
-.mascotaOpcionesSalud{
+
+.mascotaOpcionesSalud {
     color: rgb(1, 116, 142);
     border-bottom: 3px solid rgb(250 156 147);
 }
-.mascotaOpcionesAdopcion{
-    color:rgb(1, 116, 142);
+
+.mascotaOpcionesAdopcion {
+    color: rgb(1, 116, 142);
     border-bottom: 3px solid rgb(250 156 147);
 }
-.mascotaHuella{
+
+.mascotaHuella {
     height: 20px;
 }
-.mascotaLinea{
+
+.mascotaLinea {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
 }
+
 .mascotaLinea2 {
     display: flex;
     justify-content: center;
 }
-.mascotaPersonalidad{
+
+.mascotaPersonalidad {
     display: flex;
     flex-wrap: wrap;
 }
-.mascotaPersonalidadH{
+
+.mascotaPersonalidadH {
     color: rgb(1, 116, 142);
     text-align: start;
     padding: 10px;
 }
-.mascotaPersonalidadP{
+
+.mascotaPersonalidadP {
     background-color: rgb(1, 116, 142);
     color: #ffffff;
     padding: 0 20px;
     margin: 5px 5px;
     border-radius: 100px;
 }
-.mascotasDescripcion{
+
+.mascotasDescripcion {
     border: 1px solid rgb(1, 116, 142);
     text-align: start;
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 20px;
 }
-.mascotasDescripcion h3{
+
+.mascotasDescripcion h3 {
     color: rgb(1, 116, 142);
     text-align: start;
 }

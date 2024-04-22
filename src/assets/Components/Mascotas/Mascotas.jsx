@@ -1,54 +1,36 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Mascotas.css';
 import Buscar from '../Buscar/Buscar';
 import { Link } from 'react-router-dom';
 import MisMascotas from '../MisMascotas/MisMascotas';
 
-
 export default function Mascotas() {
-    const [mascotas, setMascotas] = useState([])
-    const urlBbdd = "https://servidor-protectora.vercel.app/api/mascotas"
-
+    const [mascotas, setMascotas] = useState([]);
+    const [mascotasFiltradas, setMascotasFiltradas] = useState([]);
+    const urlBbdd = "https://servidor-protectora-v2.vercel.app/getMascotas";
 
     const getMascotas = async () => {
+        const res = await axios.get(urlBbdd);
+        setMascotas(res.data);
+        setMascotasFiltradas(res.data);
+    };
 
-
-        const res = await axios.get(urlBbdd)
-        console.log(res.data);
-        setMascotas(res.data)
-    }
-
-    const handleFilterMascotas = (event) => {
-
-        const value = event.target.value;
-
-        if (value === "") {
-
-            getMascotas();
-
-        } else {
-
-            const filtered = mascotas.filter(MascotasFiltro => MascotasFiltro.nombre.toLowerCase().includes(value.toLowerCase()));
-            setMascotas(filtered);
-
-        }
-
+    const handleSearch = (busqueda) => {
+        const mascotasFiltradas = mascotas.filter(mascota =>
+            mascota.nombre.toLowerCase().includes(busqueda.toLowerCase())
+        );
+        setMascotasFiltradas(mascotasFiltradas);
     };
 
     useEffect(() => {
-        getMascotas()
-    }, [])
+        getMascotas();
+    }, []);
 
     return (
-
         <div className='container col-md-4 offset-md-4'>
-
-            <div className='conta-buscar d-flex justify-content-between'>
-                <input type='text' onChange={handleFilterMascotas} className='conta-buscar_ul col-12' placeholder='Buscar' />
-                <img src="images/Icons/icons-pink/buscarpink@3x.png" /> aasas
-            </div>
+            <Buscar onSearch={handleSearch} />
             <MisMascotas />
             <Link to={"/estados"}>
                 <div className='b-border col-12 d-flex justify-content-between align-items-center'>
@@ -66,9 +48,7 @@ export default function Mascotas() {
                     <img src="public/images/Icons/icons-pink/filtros@3x.png" alt="" />
                 </div>
                 <div className='carta'>
-
-                    {mascotas.map((mascota, index) =>
-
+                    {mascotasFiltradas.map((mascota, index) =>
                         <Link key={index} to={`/mascotas/${mascota.id}`}>
                             <div className='card-animal' >
                                 <div className='image-container' >
@@ -84,9 +64,6 @@ export default function Mascotas() {
                     )}
                 </div>
             </div>
-        </div >
-
-
-
-    )
+        </div>
+    );
 }

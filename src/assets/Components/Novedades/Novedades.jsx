@@ -58,10 +58,10 @@ export default function Novedades() {
         <>
             <div className="container-fluid-div">
                 <div className="row">
-                    <div className="col d-flex justify-content-center align-items-center">
+                    <div className="col d-flex justify-content-center align-items-center clasecontenido">
 
                         <div className='contenedor-novedades center '>
-                            <div className='d-flex col-md-2 offset-md-2' style={{ color: '#00748E', marginTop: '20px' }}>
+                            <div className='d-flex col-md-3 offset-md-3' style={{ color: '#00748E', marginTop: '20px', width: '100%' }}>
                                 <h1>¡Hola {usuarioSession.username}! </h1>
                             </div>
                             <CarouselNovedades />

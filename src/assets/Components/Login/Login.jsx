@@ -32,7 +32,7 @@ export default function Login() {
 
         }
 
-        fetch('http://localhost:3000/login', {
+        fetch('https://servidor-protectora-v2.vercel.app/login', {
 
             method: 'POST',
             headers: {
@@ -78,7 +78,7 @@ export default function Login() {
 
         }
 
-        fetch('http://localhost:3000/registro', {
+        fetch('https://servidor-protectora-v2.vercel.app/registro', {
 
             method: 'POST',
             headers: {
