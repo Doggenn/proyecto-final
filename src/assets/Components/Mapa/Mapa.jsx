@@ -7,20 +7,11 @@ import axios from 'axios';
 
 const MapContainer = () => {
 
-  const [mapas, setMapas] = useState([])
-
   const getMapa = async () => {
 
     const urlBbdd = "http://localhost:3000/getmapas"
     const res = await axios.get(urlBbdd)
-    setMapas(res.data)
 
-  }
-
-
-  useEffect(() => {
-
-    getMapa();
 
     const map = L.map('mi_mapa').setView([40.4166, -3.7035], 14);
 
@@ -31,7 +22,9 @@ const MapContainer = () => {
 
     const popup = L.popup();
 
-    { mapas.map((mapasIndice, index) => L.marker([mapasIndice.long, mapasIndice.lat], 14).addTo(map).bindPopup(mapasIndice.nombre)) }
+    console.log(mapas);
+
+    { res.data.map((mapasIndice, index) => L.marker([mapasIndice.long, mapasIndice.lat], 14).addTo(map).bindPopup(mapasIndice.nombre)) }
 
 
     function onMapClick(e) {
@@ -48,6 +41,15 @@ const MapContainer = () => {
       map.off('click', onMapClick);
       map.remove();
     };
+
+  }
+
+
+  useEffect(() => {
+
+    getMapa();
+
+
   }, []); // Empty dependency array ensures useEffect only runs once
 
 
