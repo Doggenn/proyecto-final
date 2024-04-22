@@ -1,12 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './Filtros.css'
+import { Link } from 'react-router-dom';
 
 export default function Filtros() {
+
+    const [filtros, setFiltros] = useState({
+        tipo: ''
+    });
     return (
         <div className='container'>
-            <div className='display col-12 d-flex justify-content-end'>
-                <h2>Filtros</h2>
-                <img src="public/images/Icons/cerrar@3x.png" alt="" />
+            <Link to={'/mascotas'}>
+                <div className='link d-flex justify-content-end'>
+                    <span>x</span>
+                </div>
+            </Link>
+            <div className='display col-12 d-flex justify-content-center'>
+                <div className='d-flex '>
+                    <h2 className='d-flex justify-content-end'>Filtros</h2>
+                </div>
             </div>
             <div className='c-sele col-8 d-flex flex-column'>
                 <h4>Ciudad</h4>
@@ -20,7 +31,7 @@ export default function Filtros() {
             <div className='c-sele col-12 d-flex flex-column'>
                 <h4>Especie</h4>
                 <div className='col-12 d-flex flex-wrap'>
-                    <div className='indiv col-3 d-flex flex-column align-items-center justify-content-center'>
+                    <div className={`indiv col-3 d-flex flex-column align-items-center justify-content-center ${filtros.tipo === '' ? 'activo' : ''}`} onClick={() => setFiltros({ ...filtros, tipo: '' })}>
                         <div className='indiv-b d-flex align-items-center'>
                             <img src="public/images/Icons/icons-blue/perro.png" alt="" />
                         </div>
@@ -108,27 +119,51 @@ export default function Filtros() {
                     <option value="mayor">Mayor</option>
                 </select>
             </div>
-            <div className='c-sele'>
+            <div className='c-sele d-flex flex-column'>
                 <h2>Sexo</h2>
-                <img src="public/images/Icons/icons-blue/female@3x.png" alt="" />
-                <img src="public/images/Icons/icons-blue/male@3x.png" alt="" />
+                <div className='col-12 d-flex justify-content-center'>
+                    <div className='indiv col-3 d-flex flex-column align-items-center justify-content-center'>
+                        <div className='indiv-b d-flex align-items-center'>
+                            <img src="public/images/Icons/icons-blue/female@3x.png" alt="" />
+                        </div>
+
+                        <p>Hembra</p>
+                    </div>
+                    <div className='indiv col-3 d-flex flex-column align-items-center justify-content-center'>
+                        <div className='indiv-b d-flex align-items-center'>
+                            <img src="public/images/Icons/icons-blue/male@3x.png" alt="" />
+                        </div>
+                        <p>Macho</p>
+
+                    </div>
+
+
+                </div>
             </div>
-            <div className='c-sele'>
+            <div className='c-sele d-flex flex-column '>
                 <h2>Tamaño</h2>
-                <div className='indiv col-3'>
-                    <img src="public/images/Icons/icons-blue/group@3x.png" alt="" />
-                    <h5>Pequeño</h5>
-                </div>
-                <div className='indiv col-3'>
-                    <img src="public/images/Icons/icons-blue/group@3x.png" alt="" />
-                    <h5>Mediano</h5>
-                </div>
-                <div className='indiv col-3'>
-                    <img src="public/images/Icons/icons-blue/group@3x.png" alt="" />
-                    <h5>Grande</h5>
+                <div className='d-flex justify-content-center'>
+                    <div className='indiv col-3 d-flex flex-column align-items-center justify-content-center'>
+                        <div className='indiv-b d-flex align-items-center'>
+                            <img src="public/images/Icons/icons-blue/group@3x.png" alt="" />
+                        </div>
+                        <p>Pequeño</p>
+                    </div>
+                    <div className='indiv col-3 d-flex flex-column align-items-center justify-content-center'>
+                        <div className='indiv-b d-flex align-items-center'>
+                            <img src="public/images/Icons/icons-blue/group@3x.png" alt="" />
+                        </div>
+                        <p>Mediano</p>
+                    </div>
+                    <div className='indiv col-3 d-flex flex-column align-items-center justify-content-center'>
+                        <div className='indiv-b d-flex align-items-center'>
+                            <img src="public/images/Icons/icons-blue/group@3x.png" alt="" />
+                        </div>
+                        <p>Grande</p>
+                    </div>
                 </div>
             </div>
-            <button>Aplicar</button>
+            <button className='boton-aplicar col-12'>Aplicar</button>
         </div>
     )
 }

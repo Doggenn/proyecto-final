@@ -5,6 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 
 
 const btnFilMap = () => {
+
     const [filtros, setFiltros] = useState({
         tipo: '',
         servicio: '',
