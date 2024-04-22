@@ -7,6 +7,7 @@ import axios from 'axios';
 
 const MapContainer = () => {
 
+
   const getMapa = async () => {
 
     const urlBbdd = "http://localhost:3000/getmapas"
@@ -22,7 +23,6 @@ const MapContainer = () => {
 
     const popup = L.popup();
 
-    console.log(mapas);
 
     { res.data.map((mapasIndice, index) => L.marker([mapasIndice.long, mapasIndice.lat], 14).addTo(map).bindPopup(mapasIndice.nombre)) }
 
