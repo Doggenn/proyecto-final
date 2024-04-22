@@ -1,3 +1,11 @@
+.tipoFilMap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
 .filMap {
     display: flex;
     flex-direction: column;
@@ -10,21 +18,7 @@
     padding: 0px;
 }
 
-.tipoFilMap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 30px;
-    padding: 10px;
-}
 
-.serviciosFilMap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 30px;
-    padding: 10px;
-}
 
 .btn-aplicarFilMap {
     margin-top: 30px;
@@ -37,49 +31,57 @@
 .btn-servicioFilMap {
     font-size: 1.2rem;
     padding: 10px;
-    border: 1px solid rgb(189 210 214);
 }
 
 .btn-servicioFilMap:hover {
-    border: 2px solid rgb(245 166 35);
+    border: 6px solid rgb(245 166 35);
 }
 
 .btn-tipoFilMap {
     font-size: 1.2rem;
     padding: 10px;
-    border: 1px solid rgb(189 210 214);
+    border: 1px solid #9cb6b8;
 }
 
 .btn-tipoFilMap:hover {
-    border: 2px solid rgb(245 166 35);
+    border: 6px solid rgb(245 166 35);
     background-image: url();
 }
 
 .aplyDeletFilMap {
     display: flex;
-    flex-wrap: nowrap;
-    margin: 20px;
-    flex-direction: row;
-    align-items: center;
-    width: 35%;
+    justify-content: center;
 }
 
 .buttonFilMap {
-    margin-right: 10px;
-    border: 1px solid gray;
+    display: flex;
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 6px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #9cb6b8;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+
 }
 
 .img_filMap {
-    width: 100px;
-    height: 100px;
-    padding: 25px;
+    width: 100%;
+
 }
 
 .p_filMap {
+    font-size: 15px;
     color: #01748e;
 }
 
 .btn-borrarFilMap {
+    background-color: salmon;
+    color: white;
+    background-color: transparent;
     display: flex;
     flex-wrap: nowrap;
     margin: 20px;
@@ -87,4 +89,13 @@
     align-items: center;
     border: 1px solid rgb(236, 155, 148);
 
+}
+
+.b-boton {
+    background-color: transparent;
+    background-color: salmon;
+    border: 0;
+    color: white;
+    width: 100px;
+    border-radius: 5px;
 }
