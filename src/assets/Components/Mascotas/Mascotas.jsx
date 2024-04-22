@@ -41,7 +41,9 @@ export default function Mascotas() {
             <div className='cards'>
                 <div className='c-max d-flex justify-content-between align-items-center'>
                     <h2>Animales en adopción</h2>
-                    <img src="public/images/Icons/icons-pink/filtros@3x.png" alt="" />
+                    <Link to={'/filtros'}>
+                        <img src="public/images/Icons/icons-pink/filtros@3x.png" alt="" />
+                    </Link>
                 </div>
                 <div className='carta'>
 

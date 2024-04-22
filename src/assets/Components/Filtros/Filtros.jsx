@@ -20,71 +20,73 @@ export default function Filtros() {
             <div className='c-sele col-12 d-flex flex-column'>
                 <h4>Especie</h4>
                 <div className='col-12 d-flex flex-wrap'>
-                    <div className='indiv col-3'>
-                        <div className='indiv-b'>
+                    <div className='indiv col-3 d-flex flex-column align-items-center justify-content-center'>
+                        <div className='indiv-b d-flex align-items-center'>
                             <img src="public/images/Icons/icons-blue/perro.png" alt="" />
                         </div>
-                        <p>Perro</p>
+                        <div>
+                            <p className='text-center'>Perro</p>
+                        </div>
                     </div>
-                    <div className='indiv col-3'>
-                        <div className='indiv-b'>
+                    <div className='indiv col-3  d-flex flex-column align-items-center justify-content-center'>
+                        <div className='indiv-b d-flex align-items-center'>
                             <img src="public/images/Icons/icons-blue/gato.png" alt="" />
                         </div>
-                        <p>Gato</p>
+                        <p className='text-center'>Gato</p>
                     </div>
-                    <div className='indiv col-3'>
-                        <div className='indiv-b'>
+                    <div className='indiv  col-3 d-flex flex-column align-items-center justify-content-center'>
+                        <div className='indiv-b indiv-b--ul d-flex align-items-center justify-content-center'>
                             <img src="public/images/Icons/icons-blue/conejo.png" alt="" />
                         </div>
-                        <p>Conejo</p>
+                        <p className='text-center'>Conejo</p>
                     </div>
-                    <div className='indiv col-3'>
-                        <div className='indiv-b'>
+                    <div className='indiv col-3  d-flex flex-column align-items-center'>
+                        <div className='indiv-b d-flex align-items-center'>
                             <img src="public/images/Icons/icons-blue/roedor.png" alt="" />
                         </div>
-                        <p>Cobaya</p>
+                        <p className='text-center'>Cobaya</p>
                     </div>
-                    <div className='indiv col-3'>
-                        <div className='indiv-b'>
+                    <div className='indiv col-3  d-flex flex-column align-items-center'>
+                        <div className='indiv-b d-flex align-items-center'>
                             <img src="public/images/Icons/icons-blue/insecto.png" alt="" />
                         </div>
-                        <p>Pequeño mamífero</p>
+                        <p className='text-center'>Pequeño mamífero</p>
                     </div>
-                    <div className='indiv col-3'>
-                        <div className='indiv-b'>
+                    <div className='indiv col-3  d-flex flex-column align-items-center'>
+                        <div className='indiv-b d-flex align-items-center'>
                             <img src="public/images/Icons/icons-blue/group6@3x.png" alt="" />
                         </div>
-                        <p>Hurón</p>
+                        <p className='text-center'>Hurón</p>
                     </div>
-                    <div className='indiv col-3'>
-                        <div className='indiv-b'>
+                    <div className='indiv col-3  d-flex flex-column align-items-center'>
+                        <div className='indiv-b d-flex align-items-center'>
                             <img src="public/images/Icons/icons-blue/pez.png" alt="" />
                         </div>
-                        <p>Pez</p>
+                        <p className='text-center'>Pez</p>
                     </div>
-                    <div className='indiv col-3'>
-                        <div className='indiv-b'>
+                    <div className='indiv col-3  d-flex flex-column align-items-center'>
+                        <div className='indiv-b d-flex align-items-center'>
                             <img src="public/images/Icons/icons-blue/serpiente.png" alt="" />
                         </div>
-                        <p>Reptíl</p>
+                        <p className='text-center'>Reptíl</p>
                     </div>
-                    <div className='indiv col-3'>
-                        <div className='indiv-b'>
+                    <div className='indiv col-3  d-flex flex-column align-items-center'>
+                        <div className='indiv-b d-flex align-items-center'>
                             <img src="public/images/Icons/icons-blue/anfibio.png" alt="" />
                         </div>
-                        <p>Anfibio</p>
+                        <p className='text-center'>Anfibio</p>
                     </div>
-                    <div className='indiv col-3'>
-                        <div className='indiv-b'>
+                    <div className='indiv col-3  d-flex flex-column align-items-center'>
+                        <div className='indiv-b d-flex align-items-center'>
                             <img src="public/images/Icons/icons-blue/araña.png" alt="" />
                         </div>
-                        <p>Aránido o Insecto</p>
+                        <p className='text-center'>Aránido o Insecto</p>
                     </div>
-                    <div className='indiv col-3'>
-                        <div className='indiv-b'>
+                    <div className='indiv col-3  d-flex flex-column align-items-center'>
+                        <div className='indiv-b d-flex align-items-center'>
                             <img src="public/images/Icons/icons-blue/ave.png" alt="" />
                         </div>
-                        <p>Ave</p>
+                        <p className='text-center'>Ave</p>
                     </div>
 
                 </div>
